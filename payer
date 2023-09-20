@@ -1,0 +1,2875 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>PAYEER | Balance</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript">if(!window.BX)window.BX={message:function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;}};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'en','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_SM','SERVER_TZ_OFFSET':'10800','SITE_ID':'en','USER_ID':'32840136','SERVER_TIME':'1694609171','USER_TZ_OFFSET':'0','USER_TZ_AUTO':'Y','bitrix_sessid':'f4b3af2df9e4e7e7cb30490755c7a644'});</script>
+
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/static/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/static/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/static/icons/favicon-16x16.png">
+<link rel="manifest" href="/static/icons/site.json">
+<link rel="mask-icon" href="/static/icons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<link href="/bitrix/templates/difiz_account_new/css/jquery-ui-1.12.1/jquery-ui.css?1519189774" rel="stylesheet" type="text/css" /><link href="/bitrix/templates/difiz_account_new/css/jquery-ui-1.12.1/jquery-ui.structure.css?1519189774" rel="stylesheet" type="text/css" /><link href="/bitrix/templates/difiz_account_new/css/jquery-ui-1.12.1/jquery-ui.theme.css?1519189774" rel="stylesheet" type="text/css" /><link href="/bitrix/templates/difiz/fonts/awesome/css/font-awesome.css?1390898929" rel="stylesheet" type="text/css" /><link href="/bitrix/templates/difiz_account_new/css/jquery.formstyler.new.css?1515524099" rel="stylesheet" type="text/css" /><link href="/bitrix/templates/difiz_account_new/css/jquery.formstyler.css?1614753960" rel="stylesheet" type="text/css" /><link href="/bitrix/templates/difiz/css/nprogress.css?1412163668" rel="stylesheet" type="text/css" /><link href="/bitrix/templates/difiz_account_new/css/tiptip.css?1412922481" rel="stylesheet" type="text/css" /><link href="/bitrix/templates/difiz_account_new/css/account.css?1618914600" rel="stylesheet" type="text/css" /><link href="/bitrix/templates/difiz_account_new/css/tmp.css?1392728787" rel="stylesheet" type="text/css" /><link href="/bitrix/templates/difiz_account_new/css/black.css?1691043000" rel="stylesheet" type="text/css" /><link href="/bitrix/templates/difiz_account_new/css/style_06_2016.css?1490865067" rel="stylesheet" type="text/css" /><link href="/bitrix/templates/difiz_account_new/css/difiz.css?1581483720" rel="stylesheet" type="text/css" /><link href="/bitrix/templates/difiz_account_new/css/loaders.css?1447135219" rel="stylesheet" type="text/css" /><link href="/bitrix/templates/difiz_account_new/css/styles.css?1691048940" rel="stylesheet" type="text/css" /><link href="/bitrix/templates/difiz_account_new/css/menu.css?1646752740" rel="stylesheet" type="text/css" /><link href="/bitrix/templates/difiz_account_new/css/actions.css?1518715164" rel="stylesheet" type="text/css" /><link href="/bitrix/templates/difiz_account_new/css/new_forms.css?1691043000" rel="stylesheet" type="text/css" /><link href="/bitrix/templates/difiz_account_new/css/general.css?1691043000" rel="stylesheet" type="text/css" /><link href="/bitrix/templates/difiz_account_new/css/trade.css?1642146660" rel="stylesheet" type="text/css" /><link href="/bitrix/templates/difiz_account_new/css/account_settings.css?1691043000" rel="stylesheet" type="text/css" /><link href="/bitrix/templates/difiz_account_new/css/payeermodals.css?1636108680" rel="stylesheet" type="text/css" /><link href="/bitrix/templates/difiz_account_new/css/additional.css?1656092280" rel="stylesheet" type="text/css" />
+
+<link rel="icon" href="/favicon.ico" type="image/x-icon" /><link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<script type="text/javascript" src="/bitrix/templates/difiz_account_new/js/jquery-3.3.1.min.js?1518076925"></script><script type="text/javascript" src="/bitrix/templates/difiz_account_new/js/jquery.formstyler.js?1515524958"></script><script type="text/javascript" src="/bitrix/templates/difiz_account_new/js/jquery-ui-1.12.1.min.js?1519189774"></script><script type="text/javascript" src="/bitrix/templates/difiz_account_new/js/jquery-ui-timepicker-addon.js?1416893966"></script><script type="text/javascript" src="/bitrix/templates/difiz/js/nprogress.js?1380846166"></script><script type="text/javascript" src="/bitrix/templates/difiz_account_new/js/jquery.pjax.js?1519042690"></script><script type="text/javascript" src="/bitrix/templates/difiz_account_new/js/clipboard.min.js?1465562218"></script><script type="text/javascript" src="/bitrix/templates/difiz_account_new/js/jquery.form.min.js?1393677324"></script><script type="text/javascript" src="/bitrix/templates/difiz_account_new/js/jquery.tipTip.js?1412844820"></script><script type="text/javascript" src="/bitrix/templates/difiz_account_new/js/account.js?1691043000"></script><script type="text/javascript" src="/bitrix/templates/difiz_account_new/js/lang/en.js?1465907732"></script><script type="text/javascript" src="/bitrix/templates/difiz_account_new/js/header_menu.js?1537803545"></script><script type="text/javascript" src="/bitrix/templates/difiz_account_new/js/sidebar.js?1569003657"></script><script type="text/javascript" src="/bitrix/templates/difiz_account_new/js/global.js?1629119340"></script><script type="text/javascript" src="/static/trade/js/jquery.jscroll.min.js?1528107995"></script><script type="text/javascript" src="/static/trade/js/anychart-base.min.js?1576673100"></script><script type="text/javascript" src="/static/trade/js/anychart-stock.min.js?1576673100"></script><script type="text/javascript" src="/bitrix/templates/difiz_account_new/js/jquery.sumoselect.js?1520676720"></script><script type="text/javascript" src="/bitrix/templates/difiz_account_new/js/perfect-scrollbar.js?1520674236"></script><script type="text/javascript" src="/bitrix/templates/difiz_account_new/js/jquery.scrollbar.min.js?1531432760"></script><script type="text/javascript" src="/style/js/Sortable.min.js?1572677460"></script><script type="text/javascript" src="/bitrix/templates/difiz_account_new/js/vue.js?1613457900"></script><script type="text/javascript" src="/bitrix/templates/difiz_account_new/js/payeermodals.umd.js?1684938360"></script>
+
+
+<script>
+	var socket;
+	var socketNew;
+	var socketNewTrade;
+	var chatOn = false;
+	$.pjax.defaults.maxCacheLength = 0;
+
+	window.opener = null;
+
+	$(document).ready(function(){
+		payeermodals.mountPopups(null, 'en');
+	});
+</script>
+</head>
+<body class="">
+
+<script src='https://wss.payeer.com/socket.io/socket.io.js'></script>
+<script type="text/javascript">
+	try
+	{
+		var socketNewTrade = io('https://wss.payeer.com?UserID=32840136&auth_hash=1fnjn4r4pkq9ce5u6lksktfv654dgkb8jp9pvhdthmg26ptafh38se1ec7rgaoe38aajaftk2qc0fod01g1h1gs8j8stitc7achf233',
+		{
+		  transports: ['websocket']
+		});
+		socketNewTrade.onceEvent = socketNewTrade.onceEvent2 = true;
+		socketNewTrade.inProgress = false;
+	   socketNewTrade.countM = 0
+
+		socketNewTrade.on('tickets', function (data)
+		{
+			$('#btn-support span').html(data.new);
+
+			if (data.new > 0)
+			{
+				$('#btn-support span').removeClass('empty');
+			}
+			else
+			{
+				$('#btn-support span').addClass('empty');
+			}
+		});
+
+		socketNewTrade.on('ws', function (data)
+		{
+			if (window[data.handler] != undefined)
+			{
+				window[data.handler](data);
+			}
+		});
+
+		socketNewTrade.on('balance', function (data)
+		{
+			console.log('ws balance', data);
+		});
+
+	   socketNewTrade.on('toall', function (data)
+	   {
+	      if (window[data.handler] != undefined)
+	      {
+	         window[data.handler](data);
+	      }
+	   });
+
+		socketNewTrade.on('sendtoall', function (data)
+	   {
+	      if (window[data.handler] != undefined)
+	      {
+	         window[data.handler](data);
+	      }
+	   });
+	}
+	catch(e)
+	{
+	  pre(e.message);
+	}
+</script>
+<script src="https://ws2.payeer.com/trade/socket.io/socket.io.js"></script>
+<div class="page w wleftmini1">
+	<header class="header">
+		 <div class="row row--page">
+			  <div class="col col--sidebar">
+					<div class="header-logo logo">
+						 <a href="/en/">
+							 <img class="logo-img logo-img--day" src="/style/images/logo.svg" alt="">
+							 <img class="logo-img logo-img--night" src="/bitrix/templates/difiz_account_new/img/logo-img--night.svg" alt="">
+							 <i class="icon-payeer" style="color: #fff;"></i>
+					 	 </a>
+					</div>
+			  </div>
+
+			  <div class="col col--content">
+					<style>
+.actions-notification p
+{
+   font-family: 'Gotham Pro';
+   font-size: 12px;
+   line-height: 1.33;
+   font-weight: normal;
+   padding: 0;
+}
+.actions-list
+{
+   overflow: hidden;
+}
+.balance-title
+{
+   padding-left: 8px;
+   color: #171717;
+   font-family: 'Futura New';
+   font-size: 14px;
+   font-weight: 500;
+   line-height: 24px;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   position: relative;
+   top: 19px;
+}
+.night .balance-title
+{
+   color: #fff;
+}
+.header-overlay .balance-item
+{
+   cursor: pointer;
+}
+
+
+.actions-support .actions-hint
+{
+   top: 73px;
+   width: calc(100% + 17px);
+}
+a.actions-golink.copy-payeer-account {
+   /*border-bottom: 1px dashed #3398d9;*/
+   color: #41d800;
+}
+
+#btn-support span
+{
+   left: 32px;
+}
+#btn-support span.empty
+{
+   display: none;
+}
+
+.wallet .fa-info-circle
+{
+   color: #698698;
+}
+</style>
+<div class="header-panel">
+   <div class="header-total">
+                <button class="btn btn--amount" id="btn-amount">
+            <i class="icon-dots"></i>
+            <span class="icon-padding-top icon-usd"></span><s>0<sup>.00</sup></s>
+            <i class="icon-dropdown"></i>
+        </button>
+           </div>
+   <div class="header-actions actions">
+        <ul>
+                        <li class="actions-notification">
+                                                                                            <button id="btn-notification" onclick="$('#btn-notification-href').click();">
+                    <span class="">1</span>
+                </button>
+                <a id="btn-notification-href" href="/en/account/messages/?_pjax=Y" class="pjax hide"></a>
+
+                <div class="actions-container actions-container--right">
+                   <div class="actions-header">
+   <div class="actions-title">Notifications</div>
+      </div>
+<div class="actions-list">
+   <ul class="perfect-scroll perfect-scroll-notifications">
+                <li onClick="ajaxLoad({id: '#pjax-container', url:'/en/account/messages/?_pjax=Y'})" style="cursor: pointer;">
+           <span class="actions-subject">13 Sep 2023, 15:38</span>
+                      <p class="actions-message">Your account number: P1103517987<br />
+Your secret code for password recovery: 706809<br />
+<br />
+This message will be deleted automatically in 23  hours</p>
+        </li>
+                <li onClick="ajaxLoad({id: '#pjax-container', url:'/en/account/messages/?_pjax=Y'})" style="cursor: pointer;">
+           <span class="actions-subject">31 Aug 2023, 00:27</span>
+                      <p class="actions-message">New Coins added: Chainlink, The Sandbox, Decentraland, STEPN, Aave, Uniswap, Sushi, PancakeSwap, Curve, DAO, 1inch, Balancer, The Graph, ApeCoin, GALA, Lido.</p>
+        </li>
+                <li onClick="ajaxLoad({id: '#pjax-container', url:'/en/account/messages/?_pjax=Y'})" style="cursor: pointer;">
+           <span class="actions-subject">25 Apr 2023, 21:11</span>
+                      <p class="actions-message">Added BNB coin. Polygon, DAI, Polkadot will be added in next few days.</p>
+        </li>
+                <li onClick="ajaxLoad({id: '#pjax-container', url:'/en/account/messages/?_pjax=Y'})" style="cursor: pointer;">
+           <span class="actions-subject">03 Nov 2022, 02:05</span>
+                      <p class="actions-message">The cost of SMS security notifications has been changed to $0.25. The cost of incoming calls is $0.05. We are preparing a new version of PAYEER for you, including a website and completely new applications for Android and IOS, in the new version you will see a new updated design, new functionality and a large number of cryptocurrencies.</p>
+        </li>
+                <li onClick="ajaxLoad({id: '#pjax-container', url:'/en/account/messages/?_pjax=Y'})" style="cursor: pointer;">
+           <span class="actions-subject">09 May 2022, 11:15</span>
+                      <p class="actions-message">QIWI withdrawal fees temporarily 0%</p>
+        </li>
+                <li onClick="ajaxLoad({id: '#pjax-container', url:'/en/account/messages/?_pjax=Y'})" style="cursor: pointer;">
+           <span class="actions-subject">08 Mar 2022, 22:54</span>
+                      <p class="actions-message">Now you can make transactions on our crypto exchange using the API protocol. To do this, go to the API tab in the side menu of your personal account. For the maker, such operations are almost free - the fees is only 0.01%. We are also working on a big update of the service and the exchange: updated design, expanded functionality, as well as a large number of cryptocurrencies.</p>
+        </li>
+                <li onClick="ajaxLoad({id: '#pjax-container', url:'/en/account/messages/?_pjax=Y'})" style="cursor: pointer;">
+           <span class="actions-subject">01 Feb 2022, 13:53</span>
+                      <p class="actions-message">Added Tether USDT via the TRX-20 network. Now transactions via USDT cost much cheaper.<br />
+<br />
+We also remind you that we use the verification of all crypto payments for risk groups: Mixers, Scam, OFAC sanction list, Darkweb, Hack, Scam, Terrorism, etc. You risk losing all funds by using PAYEER for this kind of transactions.</p>
+        </li>
+                <li onClick="ajaxLoad({id: '#pjax-container', url:'/en/account/messages/?_pjax=Y'})" style="cursor: pointer;">
+           <span class="actions-subject">25 Nov 2021, 18:57</span>
+                      <p class="actions-message">Added Tron cryptocurrency. In a few days USDT can be sent via TRC-20, which will be much cheaper.</p>
+        </li>
+                <li onClick="ajaxLoad({id: '#pjax-container', url:'/en/account/messages/?_pjax=Y'})" style="cursor: pointer;">
+           <span class="actions-subject">05 Oct 2021, 12:20</span>
+                      <p class="actions-message">Dear users:<br />
+<br />
+- Added DOGE cryptocurrency<br />
+- The trading functionality &quot;Market&quot; and &quot;Stop Limit&quot; has been launched on the exchange.<br />
+<br />
+We are working on adding new cryptocurrencies.</p>
+        </li>
+                <li onClick="ajaxLoad({id: '#pjax-container', url:'/en/account/messages/?_pjax=Y'})" style="cursor: pointer;">
+           <span class="actions-subject">20 Aug 2021, 00:08</span>
+                      <p class="actions-message">Dear users, New cryptocurrencies will be added in near feature and new trade functionality will be launched.</p>
+        </li>
+                <li onClick="ajaxLoad({id: '#pjax-container', url:'/en/account/messages/?_pjax=Y'})" style="cursor: pointer;">
+           <span class="actions-subject">17 Nov 2020, 16:26</span>
+                      <p class="actions-message">PerfectMoney payment method has been added.</p>
+        </li>
+           </ul>
+</div>
+<script>
+function afterNotificationsMarkAll(e, data)
+{
+   $('.actions-notification #btn-markall').remove();
+      $('.actions-notification > button span').addClass('empty').html('0');
+}
+</script>
+                </div>
+            </li>
+            <li class="actions-account">
+                <button id="btn-account">
+                    <i class="icon-user"></i>
+                    <span>Account No.</span>
+                    <b>P1103517987 <i class="icon-dropdown"></i></b>
+                </button>
+                <div class="actions-container actions-container--right">
+                    <div class="actions-info">
+                        <ul>
+                           <li>
+                              <i class="icon-user"></i>
+                              <span>Account No.</span>
+                              <b>P1103517987</b>
+                              <a id="PayeerAccount" class="actions-golink pjax" href="#" data-alt-text="Copied" data-clipboard-text="P1103517987" onclick="return false;">Copy</a>
+                           </li>
+                            <li>
+                                <i class="icon-book"></i>
+                                <span>Verification</span>
+                                <b>No</b>
+                                <a class="actions-golink pjax" href="/en/account/settings/?verification">Go</a>
+                            </li>
+                            <li>
+                                <i class="icon-star"></i>
+                                <span>Account Type</span>
+                                <b>Registered</b>
+                            </li>
+                            <li>
+                                <i class="icon-calendar"></i>
+                                <span>Registration</span>
+                                <b>13.09.2023</b>
+                            </li>
+                        </ul>
+                        <div class="row">
+                            <div class="col col--6">
+                                <div class="switcher">
+                                    <label>
+                                        <span class="switcher-label">IP Security</span>
+                                        <span class="switcher-container">
+                                                                                        <a href="/en/account/settings/?tab=security" class="pjax">
+                                            <span class="switcher-box on">
+                                                <span class="switcher-off">Off</span>
+                                                <span class="switcher-on">On</span>
+                                            </span>
+                                            </a>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col col--6">
+                                <div class="switcher">
+                                    <label>
+                                        <span class="switcher-label">SMS Security</span>
+                                        <span class="switcher-container">
+                                                                                        <a href="/en/account/settings/?tab=security" class="pjax">
+                                            <span class="switcher-box off">
+                                                <span class="switcher-off">Off</span>
+                                                <span class="switcher-on">On</span>
+                                            </span>
+                                            </a>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/actions-container -->
+            </li>
+                                    <li class="actions-language">
+                <button id="btn-language"><img src="/bitrix/templates/difiz_account_new/img/lang-english.svg" alt="english"></button>
+                <div class="actions-container actions-container--right">
+                    <div class="actions-opt">
+                        <ul>
+                                                        <li>
+                                <a class="selected" href="/en/account/" onClick="setLang('en'); return false;">
+                                    <img src="/bitrix/templates/difiz_account_new/img/lang-english.svg" alt="english"> english                                </a>
+                            </li>
+                                                        <li>
+                                <a class="" href="/ru/account/" onClick="setLang('ru'); return false;">
+                                    <img src="/bitrix/templates/difiz_account_new/img/lang-russian.svg" alt="russian"> russian                                </a>
+                            </li>
+                                                    </ul>
+                    </div>
+                </div><!--/actions-container -->
+            </li>
+                        <li class="actions-theme">
+                <button id="btn-theme"><i class="icon-day"></i></button>
+                <div class="actions-container actions-container--right">
+                    <div class="actions-opt">
+                        <ul>
+                            <li><a class="light selected" href="#day" onClick="setTypeLight('light'); return false;"><i class="icon-day"></i> Light</a></li>
+                            <li><a class="contrast" href="#night" onClick="setTypeLight('contrast'); return false;"><i class="icon-night"></i> Dark</a></li>
+                        </ul>
+                    </div>
+                </div><!--/actions-container -->
+            </li>
+
+            <li class="actions-theme actions-notification actions-support">
+               <button id="btn-support" onclick="$('#btn-support-href').click();" style="padding-left: 18px; padding-right: 18px;">
+                  <i class="icon-support2" style="background: url('/style/images/icon_support.svg'); background-size: cover; width: 24px; height: 24px; display: block; position: relative; top: -1px;" ></i>
+                  <span class="empty">0</span>
+               </button>
+               <div class="actions-hint">Support</div>
+               <a id="btn-support-href" href="/en/account/support/" class="pjax hide"></a>
+            </li>
+
+            <li class="actions-settings">
+                <button id="btn-settings"><i class="icon-settings"></i></button>
+                <div class="actions-container actions-container--right">
+                    <div class="actions-opt">
+                        <ul>
+                                                        <li><a href="/en/account/settings/" class="pjax"><i class="icon-settings"></i> Profile</a></li>
+                            <li><a href="/en/account/log/" class="pjax"><i class="icon-security"></i> Logs</a></li>
+                            <li><a href="/en/account/referrals/" class="pjax"><i class="icon-referals"></i> My Referrals</a></li>
+                            <li><a href="/en/account/cards/" class="pjax"><i class="icon-card"></i> My cards</a></li>
+                        </ul>
+                    </div>
+                </div><!--/actions-container -->
+            </li>
+                        <li class="actions-logout">
+                <button id="btn-logout" onclick="document.location='/en/account/?logout=yes&sessid=f4b3af2df9e4e7e7cb30490755c7a644';return false;"><i class="icon-logout"></i></button>
+                <div class="actions-hint">Log Out</div>
+            </li>
+        </ul>
+   </div><!--/header-actions -->
+</div><!--/header-panel -->
+<div class="header-overlay">
+   <div class="wallet">
+        <div class="wallet-title">My Balance <span class="fa fa-info-circle" data-title="The approximate sum of all currencies on your balance converted at the market rate, is not the correct total amount"></span></div>
+        <div class="trade-management__tool-tip js-tool-tip js-tool-tip-ordertype"></div>
+        <div class="wallet-total"><span class="icon-padding-top icon-usd"></span><s>0<sup>.00</sup></s></div>
+        <div class="balance">
+                                    <div class="balance-title">Fiat Accounts</div>
+                                       <div class="balance-item balance-item--green  balance-item--usd balance-curr--usd" onclick="ajaxLoad({id: '#pjax-container', url:'/en/account/add/?_pjax=Y&curr=USD'}); $('body').click(); return false;">
+                   <i class="icon-usd"></i>
+                   <s>
+                   0<sup>.00</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--rub balance-curr--rub" onclick="ajaxLoad({id: '#pjax-container', url:'/en/account/add/?_pjax=Y&curr=RUB'}); $('body').click(); return false;">
+                   <i class="icon-rub"></i>
+                   <s>
+                   0<sup>.00</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--eur balance-curr--eur" onclick="ajaxLoad({id: '#pjax-container', url:'/en/account/add/?_pjax=Y&curr=EUR'}); $('body').click(); return false;">
+                   <i class="icon-eur"></i>
+                   <s>
+                   0<sup>.00</sup>
+                   </s>
+               </div>
+                                       <div class="clear"></div>
+            <div class="balance-title">Crypto Accounts</div>
+                                       <div class="balance-item balance-item--green  balance-item--btc balance-curr--btc" onclick="ajaxLoad({id: '#pjax-container', url:'/en/account/add/?_pjax=Y&curr=BTC'}); $('body').click(); return false;">
+                   <i class="icon-btc"></i>
+                   <s>
+                   0<sup>.00000000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--eth balance-curr--eth" onclick="ajaxLoad({id: '#pjax-container', url:'/en/account/add/?_pjax=Y&curr=ETH'}); $('body').click(); return false;">
+                   <i class="icon-eth"></i>
+                   <s>
+                   0<sup>.00000000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--bch balance-curr--bch" onclick="ajaxLoad({id: '#pjax-container', url:'/en/account/add/?_pjax=Y&curr=BCH'}); $('body').click(); return false;">
+                   <i class="icon-bch"></i>
+                   <s>
+                   0<sup>.00000000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--ltc balance-curr--ltc" onclick="ajaxLoad({id: '#pjax-container', url:'/en/account/add/?_pjax=Y&curr=LTC'}); $('body').click(); return false;">
+                   <i class="icon-ltc"></i>
+                   <s>
+                   0<sup>.00000000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--daa balance-curr--daa" onclick="ajaxLoad({id: '#pjax-container', url:'/en/account/add/?_pjax=Y&curr=DAA'}); $('body').click(); return false;">
+                   <i class="icon-daa"></i>
+                   <s>
+                   0<sup>.00000000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--ust balance-curr--ust" onclick="ajaxLoad({id: '#pjax-container', url:'/en/account/add/?_pjax=Y&curr=UST'}); $('body').click(); return false;">
+                   <i class="icon-ust"></i>
+                   <s>
+                   0<sup>.00</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--xrp balance-curr--xrp" onclick="ajaxLoad({id: '#pjax-container', url:'/en/account/add/?_pjax=Y&curr=XRP'}); $('body').click(); return false;">
+                   <i class="icon-xrp"></i>
+                   <s>
+                   0<sup>.000000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--dog balance-curr--dog" onclick="ajaxLoad({id: '#pjax-container', url:'/en/account/add/?_pjax=Y&curr=DOG'}); $('body').click(); return false;">
+                   <i class="icon-dog"></i>
+                   <s>
+                   0<sup>.00000000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--trx balance-curr--trx" onclick="ajaxLoad({id: '#pjax-container', url:'/en/account/add/?_pjax=Y&curr=TRX'}); $('body').click(); return false;">
+                   <i class="icon-trx"></i>
+                   <s>
+                   0<sup>.000000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--bnb balance-curr--bnb" onclick="ajaxLoad({id: '#pjax-container', url:'/en/account/add/?_pjax=Y&curr=BNB'}); $('body').click(); return false;">
+                   <i class="icon-bnb"></i>
+                   <s>
+                   0<sup>.00000000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--ma1 balance-curr--ma1" onclick="ajaxLoad({id: '#pjax-container', url:'/en/account/add/?_pjax=Y&curr=MA1'}); $('body').click(); return false;">
+                   <i class="icon-ma1"></i>
+                   <s>
+                   0<sup>.0000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--dai balance-curr--dai" onclick="ajaxLoad({id: '#pjax-container', url:'/en/account/add/?_pjax=Y&curr=DAI'}); $('body').click(); return false;">
+                   <i class="icon-dai"></i>
+                   <s>
+                   0<sup>.00</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--dot balance-curr--dot" onclick="ajaxLoad({id: '#pjax-container', url:'/en/account/add/?_pjax=Y&curr=DOT'}); $('body').click(); return false;">
+                   <i class="icon-dot"></i>
+                   <s>
+                   0<sup>.000000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--us1 balance-curr--us1" onclick="ajaxLoad({id: '#pjax-container', url:'/en/account/add/?_pjax=Y&curr=US1'}); $('body').click(); return false;">
+                   <i class="icon-us1"></i>
+                   <s>
+                   0<sup>.00</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--li1 balance-curr--li1" onclick="ajaxLoad({id: '#pjax-container', url:'/en/account/add/?_pjax=Y&curr=LI1'}); $('body').click(); return false;">
+                   <i class="icon-li1"></i>
+                   <s>
+                   0<sup>.000000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--sa1 balance-curr--sa1" onclick="ajaxLoad({id: '#pjax-container', url:'/en/account/add/?_pjax=Y&curr=SA1'}); $('body').click(); return false;">
+                   <i class="icon-sa1"></i>
+                   <s>
+                   0<sup>.00000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--ma2 balance-curr--ma2" onclick="ajaxLoad({id: '#pjax-container', url:'/en/account/add/?_pjax=Y&curr=MA2'}); $('body').click(); return false;">
+                   <i class="icon-ma2"></i>
+                   <s>
+                   0<sup>.00000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--aa1 balance-curr--aa1" onclick="ajaxLoad({id: '#pjax-container', url:'/en/account/add/?_pjax=Y&curr=AA1'}); $('body').click(); return false;">
+                   <i class="icon-aa1"></i>
+                   <s>
+                   0<sup>.000000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--su1 balance-curr--su1" onclick="ajaxLoad({id: '#pjax-container', url:'/en/account/add/?_pjax=Y&curr=SU1'}); $('body').click(); return false;">
+                   <i class="icon-su1"></i>
+                   <s>
+                   0<sup>.00000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--ca1 balance-curr--ca1" onclick="ajaxLoad({id: '#pjax-container', url:'/en/account/add/?_pjax=Y&curr=CA1'}); $('body').click(); return false;">
+                   <i class="icon-ca1"></i>
+                   <s>
+                   0<sup>.00000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--1i1 balance-curr--1i1" onclick="ajaxLoad({id: '#pjax-container', url:'/en/account/add/?_pjax=Y&curr=1I1'}); $('body').click(); return false;">
+                   <i class="icon-1i1"></i>
+                   <s>
+                   0<sup>.00000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--ga1 balance-curr--ga1" onclick="ajaxLoad({id: '#pjax-container', url:'/en/account/add/?_pjax=Y&curr=GA1'}); $('body').click(); return false;">
+                   <i class="icon-ga1"></i>
+                   <s>
+                   0<sup>.0000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--ldo balance-curr--ldo" onclick="ajaxLoad({id: '#pjax-container', url:'/en/account/add/?_pjax=Y&curr=LDO'}); $('body').click(); return false;">
+                   <i class="icon-ldo"></i>
+                   <s>
+                   0<sup>.00000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--gmt balance-curr--gmt" onclick="ajaxLoad({id: '#pjax-container', url:'/en/account/add/?_pjax=Y&curr=GMT'}); $('body').click(); return false;">
+                   <i class="icon-gmt"></i>
+                   <s>
+                   0<sup>.00000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--uni balance-curr--uni" onclick="ajaxLoad({id: '#pjax-container', url:'/en/account/add/?_pjax=Y&curr=UNI'}); $('body').click(); return false;">
+                   <i class="icon-uni"></i>
+                   <s>
+                   0<sup>.00000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--crv balance-curr--crv" onclick="ajaxLoad({id: '#pjax-container', url:'/en/account/add/?_pjax=Y&curr=CRV'}); $('body').click(); return false;">
+                   <i class="icon-crv"></i>
+                   <s>
+                   0<sup>.00000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--bal balance-curr--bal" onclick="ajaxLoad({id: '#pjax-container', url:'/en/account/add/?_pjax=Y&curr=BAL'}); $('body').click(); return false;">
+                   <i class="icon-bal"></i>
+                   <s>
+                   0<sup>.00000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--grt balance-curr--grt" onclick="ajaxLoad({id: '#pjax-container', url:'/en/account/add/?_pjax=Y&curr=GRT'}); $('body').click(); return false;">
+                   <i class="icon-grt"></i>
+                   <s>
+                   0<sup>.00000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--ape balance-curr--ape" onclick="ajaxLoad({id: '#pjax-container', url:'/en/account/add/?_pjax=Y&curr=APE'}); $('body').click(); return false;">
+                   <i class="icon-ape"></i>
+                   <s>
+                   0<sup>.00000</sup>
+                   </s>
+               </div>
+               
+                        <div class="clear"></div>
+            <div class="balance-title balance-title-active-orders" style="display: none;">Active orders </div>
+                           <div class="balance-item balance-item--green  balance-item--usd balance-trade-curr--usd hide" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=USD'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;">
+                   <i class="icon-usd"></i>
+                   <s>
+                   0<sup>.00</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--rub balance-trade-curr--rub hide" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=RUB'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;">
+                   <i class="icon-rub"></i>
+                   <s>
+                   0<sup>.00</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--eur balance-trade-curr--eur hide" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=EUR'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;">
+                   <i class="icon-eur"></i>
+                   <s>
+                   0<sup>.00</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--btc balance-trade-curr--btc hide" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=BTC'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;">
+                   <i class="icon-btc"></i>
+                   <s>
+                   0<sup>.00000000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--eth balance-trade-curr--eth hide" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=ETH'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;">
+                   <i class="icon-eth"></i>
+                   <s>
+                   0<sup>.00000000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--bch balance-trade-curr--bch hide" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=BCH'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;">
+                   <i class="icon-bch"></i>
+                   <s>
+                   0<sup>.00000000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--ltc balance-trade-curr--ltc hide" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=LTC'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;">
+                   <i class="icon-ltc"></i>
+                   <s>
+                   0<sup>.00000000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--daa balance-trade-curr--daa hide" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=DAA'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;">
+                   <i class="icon-daa"></i>
+                   <s>
+                   0<sup>.00000000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--ust balance-trade-curr--ust hide" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=UST'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;">
+                   <i class="icon-ust"></i>
+                   <s>
+                   0<sup>.00</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--xrp balance-trade-curr--xrp hide" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=XRP'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;">
+                   <i class="icon-xrp"></i>
+                   <s>
+                   0<sup>.000000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--dog balance-trade-curr--dog hide" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=DOG'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;">
+                   <i class="icon-dog"></i>
+                   <s>
+                   0<sup>.00000000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--trx balance-trade-curr--trx hide" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=TRX'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;">
+                   <i class="icon-trx"></i>
+                   <s>
+                   0<sup>.000000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--bnb balance-trade-curr--bnb hide" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=BNB'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;">
+                   <i class="icon-bnb"></i>
+                   <s>
+                   0<sup>.00000000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--ma1 balance-trade-curr--ma1 hide" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=MA1'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;">
+                   <i class="icon-ma1"></i>
+                   <s>
+                   0<sup>.0000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--dai balance-trade-curr--dai hide" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=DAI'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;">
+                   <i class="icon-dai"></i>
+                   <s>
+                   0<sup>.00</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--dot balance-trade-curr--dot hide" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=DOT'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;">
+                   <i class="icon-dot"></i>
+                   <s>
+                   0<sup>.000000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--us1 balance-trade-curr--us1 hide" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=US1'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;">
+                   <i class="icon-us1"></i>
+                   <s>
+                   0<sup>.00</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--li1 balance-trade-curr--li1 hide" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=LI1'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;">
+                   <i class="icon-li1"></i>
+                   <s>
+                   0<sup>.000000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--sa1 balance-trade-curr--sa1 hide" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=SA1'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;">
+                   <i class="icon-sa1"></i>
+                   <s>
+                   0<sup>.00000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--ma2 balance-trade-curr--ma2 hide" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=MA2'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;">
+                   <i class="icon-ma2"></i>
+                   <s>
+                   0<sup>.00000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--aa1 balance-trade-curr--aa1 hide" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=AA1'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;">
+                   <i class="icon-aa1"></i>
+                   <s>
+                   0<sup>.000000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--su1 balance-trade-curr--su1 hide" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=SU1'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;">
+                   <i class="icon-su1"></i>
+                   <s>
+                   0<sup>.00000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--ca1 balance-trade-curr--ca1 hide" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=CA1'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;">
+                   <i class="icon-ca1"></i>
+                   <s>
+                   0<sup>.00000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--1i1 balance-trade-curr--1i1 hide" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=1I1'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;">
+                   <i class="icon-1i1"></i>
+                   <s>
+                   0<sup>.00000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--ga1 balance-trade-curr--ga1 hide" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=GA1'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;">
+                   <i class="icon-ga1"></i>
+                   <s>
+                   0<sup>.0000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--ldo balance-trade-curr--ldo hide" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=LDO'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;">
+                   <i class="icon-ldo"></i>
+                   <s>
+                   0<sup>.00000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--gmt balance-trade-curr--gmt hide" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=GMT'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;">
+                   <i class="icon-gmt"></i>
+                   <s>
+                   0<sup>.00000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--uni balance-trade-curr--uni hide" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=UNI'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;">
+                   <i class="icon-uni"></i>
+                   <s>
+                   0<sup>.00000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--crv balance-trade-curr--crv hide" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=CRV'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;">
+                   <i class="icon-crv"></i>
+                   <s>
+                   0<sup>.00000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--bal balance-trade-curr--bal hide" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=BAL'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;">
+                   <i class="icon-bal"></i>
+                   <s>
+                   0<sup>.00000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--grt balance-trade-curr--grt hide" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=GRT'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;">
+                   <i class="icon-grt"></i>
+                   <s>
+                   0<sup>.00000</sup>
+                   </s>
+               </div>
+                              <div class="balance-item balance-item--green  balance-item--ape balance-trade-curr--ape hide" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=APE'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;">
+                   <i class="icon-ape"></i>
+                   <s>
+                   0<sup>.00000</sup>
+                   </s>
+               </div>
+                       </div>
+   </div><!--/wallet -->
+
+   <div class="statusinfo">
+        <div class="statusinfo-icon">
+            <span class="icon-approved">
+                <span class="path1"></span>
+                <span class="path2"></span>
+            </span>
+        </div>
+        <div class="statusinfo-title"></div>
+        <div class="statusinfo-direction"></div>
+        <div class="statusinfo-descr"></div>
+
+        <div class="statusinfo-options">
+            <a href="#" style="display: none;">Details</a>
+            <button class="statusinfo-close">
+                <i class="icon-close"></i>
+                Close            </button>
+        </div>
+   </div><!--/statusinfo -->
+
+</div><!--/header-overlay -->
+<script type="text/javascript">
+var itogCurr = 'USD';
+var arInternalExchangeRate = {"USD\/USD":"1.00000000","USD\/RUB":"94.70350000","USD\/EUR":"0.93244595","USD\/BTC":"0.00003830","USD\/ETH":"0.00062687","USD\/BCH":"0.00498119","USD\/LTC":"0.01642498","USD\/DAA":"0.03939299","USD\/UST":"1.00003696","USD\/XRP":"2.08689952","USD\/DOG":"16.41308492","USD\/TRX":"12.44461235","USD\/BNB":"0.00473778","USD\/MA1":"1.96358076","USD\/DAI":"0.98209582","USD\/DOT":"0.25010167","USD\/US1":"0.99982580","USD\/LI1":"0.16731180","USD\/SA1":"3.48046674","USD\/MA2":"3.64104191","USD\/AA1":"0.01859692","USD\/SU1":"1.69385620","USD\/CA1":"0.86133242","USD\/1I1":"4.33822721","USD\/GA1":"71.20563910","USD\/LDO":"0.68136916","USD\/GMT":"6.89254003","USD\/UNI":"0.23529989","USD\/CRV":"2.50405870","USD\/BAL":"0.31411821","USD\/GRT":"12.42828084","USD\/APE":"0.87883723","RUB\/USD":"0.01055927","RUB\/RUB":"1.00000000","RUB\/EUR":"0.00984595","RUB\/BTC":"0.00000040","RUB\/ETH":"0.00000662","RUB\/BCH":"0.00005260","RUB\/LTC":"0.00017344","RUB\/DAA":"0.00041596","RUB\/UST":"0.01055966","RUB\/XRP":"0.02203614","RUB\/DOG":"0.17331023","RUB\/TRX":"0.13140604","RUB\/BNB":"0.00005003","RUB\/MA1":"0.02073398","RUB\/DAI":"0.01037022","RUB\/DOT":"0.00264089","RUB\/US1":"0.01055743","RUB\/LI1":"0.00176669","RUB\/SA1":"0.03675119","RUB\/MA2":"0.03844675","RUB\/AA1":"0.00019637","RUB\/SU1":"0.01788589","RUB\/CA1":"0.00909504","RUB\/1I1":"0.04580852","RUB\/GA1":"0.75187970","RUB\/LDO":"0.00719476","RUB\/GMT":"0.07278020","RUB\/UNI":"0.00248460","RUB\/CRV":"0.02644104","RUB\/BAL":"0.00331686","RUB\/GRT":"0.13123360","RUB\/APE":"0.00927988","EUR\/USD":"1.07244822","EUR\/RUB":"101.56460000","EUR\/EUR":"1.00000000","EUR\/BTC":"0.00004108","EUR\/ETH":"0.00067229","EUR\/BCH":"0.00534207","EUR\/LTC":"0.01761494","EUR\/DAA":"0.04224694","EUR\/UST":"1.07248786","EUR\/XRP":"2.23809167","EUR\/DOG":"17.60218371","EUR\/TRX":"13.34620237","EUR\/BNB":"0.00508102","EUR\/MA1":"2.10583869","EUR\/DAI":"1.05324691","EUR\/DOT":"0.26822110","EUR\/US1":"1.07226140","EUR\/LI1":"0.17943325","EUR\/SA1":"3.73262036","EUR\/MA2":"3.90482891","EUR\/AA1":"0.01994423","EUR\/SU1":"1.81657306","EUR\/CA1":"0.92373442","EUR\/1I1":"4.65252405","EUR\/GA1":"76.36436090","EUR\/LDO":"0.73073315","EUR\/GMT":"7.39189229","EUR\/UNI":"0.25234695","EUR\/CRV":"2.68547329","EUR\/BAL":"0.33687552","EUR\/GRT":"13.32868766","EUR\/APE":"0.94250742","BTC\/USD":"26108.45713200","BTC\/RUB":"2472562.27000000","BTC\/EUR":"24344.72513061","BTC\/BTC":"1.00000000","BTC\/ETH":"16.36671879","BTC\/BCH":"130.05114445","BTC\/LTC":"428.83098501","BTC\/DAA":"1028.49013132","BTC\/UST":"26109.42206969","BTC\/XRP":"54485.72653151","BTC\/DOG":"428520.32409012","BTC\/TRX":"324909.62812089","BTC\/BNB":"123.69614638","BTC\/MA1":"51266.06406801","BTC\/DAI":"25641.00663694","BTC\/DOT":"6529.76884276","BTC\/US1":"26103.90910051","BTC\/LI1":"4368.25304312","BTC\/SA1":"90869.61668504","BTC\/MA2":"95061.98654364","BTC\/AA1":"485.53682034","BTC\/SU1":"44223.97191916","BTC\/CA1":"22488.06066394","BTC\/1I1":"113264.41914796","BTC\/GA1":"1859069.37593985","BTC\/LDO":"17789.49758975","BTC\/GMT":"179953.58588064","BTC\/UNI":"6143.31710892","BTC\/CRV":"65377.10920148","BTC\/BAL":"8201.14189525","BTC\/GRT":"324483.23753281","BTC\/APE":"22945.08416852","ETH\/USD":"1595.21633308","ETH\/RUB":"151072.57000000","ETH\/EUR":"1487.45301020","ETH\/BTC":"0.06109960","ETH\/ETH":"1.00000000","ETH\/BCH":"7.94607313","ETH\/LTC":"26.20140240","ETH\/DAA":"62.84033743","ETH\/UST":"1595.27529039","ETH\/XRP":"3329.05619216","ETH\/DOG":"26182.42114385","ETH\/TRX":"19851.84888305","ETH\/BNB":"7.55778528","ETH\/MA1":"3132.33609786","ETH\/DAI":"1566.65529400","ETH\/DOT":"398.96627581","ETH\/US1":"1594.93845017","ETH\/LI1":"266.89852128","ETH\/SA1":"5552.09739067","ETH\/MA2":"5808.24951942","ETH\/AA1":"29.66610636","ETH\/SU1":"2702.06707208","ETH\/CA1":"1374.01155070","ETH\/1I1":"6920.41090243","ETH\/GA1":"113588.39849624","ETH\/LDO":"1086.93121807","ETH\/GMT":"10995.09243086","ETH\/UNI":"375.35422878","ETH\/CRV":"3994.51533580","ETH\/BAL":"501.08650370","ETH\/GRT":"19825.79658793","ETH\/APE":"1401.93550483","BTE\/BTE":"1.00000000","BTA\/BTA":"1.00000000","BTB\/BTB":"1.00000000","BCH\/USD":"200.75530471","BCH\/RUB":"19012.23000000","BCH\/EUR":"187.19347095","BCH\/BTC":"0.00768928","BCH\/ETH":"0.12584833","BCH\/BCH":"1.00000000","BCH\/LTC":"3.29740262","BCH\/DAA":"7.90835125","BCH\/UST":"200.76272439","BCH\/XRP":"418.95614808","BCH\/DOG":"3295.01386482","BCH\/TRX":"2498.32194481","BCH\/BNB":"0.95113462","BCH\/MA1":"394.19925358","BCH\/DAI":"197.16094576","BCH\/DOT":"50.20923784","BCH\/US1":"200.72033361","BCH\/LI1":"33.58873205","BCH\/SA1":"698.72216097","BCH\/MA2":"730.95847751","BCH\/AA1":"3.73342982","BCH\/SU1":"340.05061706","BCH\/CA1":"172.91705321","BCH\/1I1":"870.92212552","BCH\/GA1":"14294.90977444","BCH\/LDO":"136.78847399","BCH\/GMT":"1383.71397380","BCH\/UNI":"47.23770125","BCH\/CRV":"502.70306716","BCH\/BAL":"63.06089754","BCH\/GRT":"2495.04330709","BCH\/APE":"176.43123608","LTC\/USD":"60.88286072","LTC\/RUB":"5765.82000000","LTC\/EUR":"56.76997694","LTC\/BTC":"0.00233192","LTC\/ETH":"0.03816590","LTC\/BCH":"0.30326900","LTC\/LTC":"1.00000000","LTC\/DAA":"2.39835778","LTC\/UST":"60.88511088","LTC\/XRP":"127.05641252","LTC\/DOG":"999.27556326","LTC\/TRX":"757.66360053","LTC\/BNB":"0.28844965","LTC\/MA1":"119.54841385","LTC\/DAI":"59.79280307","LTC\/DOT":"15.22690540","LTC\/US1":"60.87225507","LTC\/LI1":"10.18642121","LTC\/SA1":"211.90077178","LTC\/MA2":"221.67704729","LTC\/AA1":"1.13223353","LTC\/SU1":"103.12681095","LTC\/CA1":"52.44038199","LTC\/1I1":"264.12368301","LTC\/GA1":"4335.20300752","LTC\/LDO":"41.48370386","LTC\/GMT":"419.63755459","LTC\/UNI":"14.32573047","LTC\/CRV":"152.45425701","LTC\/BAL":"19.12441540","LTC\/GRT":"756.66929134","LTC\/APE":"53.50612472","DAA\/USD":"25.38522863","DAA\/RUB":"2404.07000000","DAA\/EUR":"23.67035365","DAA\/BTC":"0.00097230","DAA\/ETH":"0.01591335","DAA\/BCH":"0.12644861","DAA\/LTC":"0.41695197","DAA\/DAA":"1.00000000","DAA\/UST":"25.38616684","DAA\/XRP":"52.97642133","DAA\/DOG":"416.64991334","DAA\/TRX":"315.90932983","DAA\/BNB":"0.12026965","DAA\/MA1":"49.84594651","DAA\/DAI":"24.93072695","DAA\/DOT":"6.34888818","DAA\/US1":"25.38080659","DAA\/LI1":"4.24724838","DAA\/SA1":"88.35244395","DAA\/MA2":"92.42868128","DAA\/AA1":"0.47208700","DAA\/SU1":"42.99892685","DAA\/CA1":"21.86512051","DAA\/1I1":"110.12688960","DAA\/GA1":"1807.57142857","DAA\/LDO":"17.29671199","DAA\/GMT":"174.96870451","DAA\/UNI":"5.97314152","DAA\/CRV":"63.56610259","DAA\/BAL":"7.97396265","DAA\/GRT":"315.49475066","DAA\/APE":"22.30948404","UST\/USD":"0.99996304","UST\/RUB":"94.70000000","UST\/EUR":"0.93241149","UST\/BTC":"0.00003830","UST\/ETH":"0.00062685","UST\/BCH":"0.00498100","UST\/LTC":"0.01642438","UST\/DAA":"0.03939153","UST\/UST":"1.00000000","UST\/XRP":"2.08682239","UST\/DOG":"16.41247834","UST\/TRX":"12.44415243","UST\/BNB":"0.00473761","UST\/MA1":"1.96350819","UST\/DAI":"0.98205953","UST\/DOT":"0.25009243","UST\/US1":"0.99978885","UST\/LI1":"0.16730562","UST\/SA1":"3.48033811","UST\/MA2":"3.64090734","UST\/AA1":"0.01859623","UST\/SU1":"1.69379360","UST\/CA1":"0.86130059","UST\/1I1":"4.33806688","UST\/GA1":"71.20300752","UST\/LDO":"0.68134398","UST\/GMT":"6.89228530","UST\/UNI":"0.23529119","UST\/CRV":"2.50396616","UST\/BAL":"0.31410660","UST\/GRT":"12.42782152","UST\/APE":"0.87880475","XRP\/USD":"0.47917976","XRP\/RUB":"45.38000000","XRP\/EUR":"0.44680922","XRP\/BTC":"0.00001835","XRP\/ETH":"0.00030039","XRP\/BCH":"0.00238688","XRP\/LTC":"0.00787052","XRP\/DAA":"0.01887632","XRP\/UST":"0.47919747","XRP\/XRP":"1.00000000","XRP\/DOG":"7.86481802","XRP\/TRX":"5.96320631","XRP\/BNB":"0.00227025","XRP\/MA1":"0.94090815","XRP\/DAI":"0.47060044","XRP\/DOT":"0.11984366","XRP\/US1":"0.47909628","XRP\/LI1":"0.08017243","XRP\/SA1":"1.66776920","XRP\/MA2":"1.74471357","XRP\/AA1":"0.00891127","XRP\/SU1":"0.81166160","XRP\/CA1":"0.41273306","XRP\/1I1":"2.07879066","XRP\/GA1":"34.12030075","XRP\/LDO":"0.32649831","XRP\/GMT":"3.30276565","XRP\/UNI":"0.11275094","XRP\/CRV":"1.19989424","XRP\/BAL":"0.15051909","XRP\/GRT":"5.95538058","XRP\/APE":"0.42112101","DOG\/USD":"0.06092700","DOG\/RUB":"5.77000000","DOG\/EUR":"0.05681113","DOG\/BTC":"0.00000233","DOG\/ETH":"0.00003819","DOG\/BCH":"0.00030349","DOG\/LTC":"0.00100072","DOG\/DAA":"0.00240010","DOG\/UST":"0.06092925","DOG\/XRP":"0.12714852","DOG\/DOG":"1.00000000","DOG\/TRX":"0.75821288","DOG\/BNB":"0.00028866","DOG\/MA1":"0.11963508","DOG\/DAI":"0.05983615","DOG\/DOT":"0.01523794","DOG\/US1":"0.06091639","DOG\/LI1":"0.01019381","DOG\/SA1":"0.21205439","DOG\/MA2":"0.22183775","DOG\/AA1":"0.00113305","DOG\/SU1":"0.10320157","DOG\/CA1":"0.05247840","DOG\/1I1":"0.26431516","DOG\/GA1":"4.33834586","DOG\/LDO":"0.04151378","DOG\/GMT":"0.41994178","DOG\/UNI":"0.01433612","DOG\/CRV":"0.15256478","DOG\/BAL":"0.01913828","DOG\/GRT":"0.75721785","DOG\/APE":"0.05354491","TRX\/USD":"0.08035606","TRX\/RUB":"7.61000000","TRX\/EUR":"0.07492768","TRX\/BTC":"0.00000308","TRX\/ETH":"0.00005037","TRX\/BCH":"0.00040027","TRX\/LTC":"0.00131985","TRX\/DAA":"0.00316547","TRX\/UST":"0.08035903","TRX\/XRP":"0.16769502","TRX\/DOG":"1.31889081","TRX\/TRX":"1.00000000","TRX\/BNB":"0.00038071","TRX\/MA1":"0.15778561","TRX\/DAI":"0.07891735","TRX\/DOT":"0.02009718","TRX\/US1":"0.08034206","TRX\/LI1":"0.01344452","TRX\/SA1":"0.27967659","TRX\/MA2":"0.29257978","TRX\/AA1":"0.00149437","TRX\/SU1":"0.13611161","TRX\/CA1":"0.06921328","TRX\/1I1":"0.34860284","TRX\/GA1":"5.72180451","TRX\/LDO":"0.05475214","TRX\/GMT":"0.55385735","TRX\/UNI":"0.01890777","TRX\/CRV":"0.20121629","TRX\/BAL":"0.02524130","TRX\/GRT":"0.99868766","TRX\/APE":"0.07061990","BNB\/USD":"211.06928466","BNB\/RUB":"19989.00000000","BNB\/EUR":"196.81069979","BNB\/BTC":"0.00808433","BNB\/ETH":"0.13231389","BNB\/BCH":"1.05137588","BNB\/LTC":"3.46680958","BNB\/DAA":"8.31464974","BNB\/UST":"211.07708553","BNB\/XRP":"440.48038784","BNB\/DOG":"3464.29809359","BNB\/TRX":"2626.67542707","BNB\/BNB":"1.00000000","BNB\/MA1":"414.45158615","BNB\/DAI":"207.29026237","BNB\/DOT":"52.78878149","BNB\/US1":"211.03251689","BNB\/LI1":"35.31438263","BNB\/SA1":"734.61962514","BNB\/MA2":"768.51211073","BNB\/AA1":"3.92523805","BNB\/SU1":"357.52101592","BNB\/CA1":"181.80081855","BNB\/1I1":"915.66651397","BNB\/GA1":"15029.32330827","BNB\/LDO":"143.81610188","BNB\/GMT":"1454.80349345","BNB\/UNI":"49.66457961","BNB\/CRV":"528.52987837","BNB\/BAL":"66.30070649","BNB\/GRT":"2623.22834646","BNB\/APE":"185.49554566","MA1\/USD":"0.50927368","MA1\/RUB":"48.23000000","MA1\/EUR":"0.47487018","MA1\/BTC":"0.00001951","MA1\/ETH":"0.00031925","MA1\/BCH":"0.00253679","MA1\/LTC":"0.00836481","MA1\/DAA":"0.02006181","MA1\/UST":"0.50929250","MA1\/XRP":"1.06280300","MA1\/DOG":"8.35875217","MA1\/TRX":"6.33771353","MA1\/BNB":"0.00241283","MA1\/MA1":"1.00000000","MA1\/DAI":"0.50015555","MA1\/DOT":"0.12737020","MA1\/US1":"0.50918497","MA1\/LI1":"0.08520750","MA1\/SA1":"1.77251011","MA1\/MA2":"1.85428681","MA1\/AA1":"0.00947092","MA1\/SU1":"0.86263638","MA1\/CA1":"0.43865393","MA1\/1I1":"2.20934494","MA1\/GA1":"36.26315789","MA1\/LDO":"0.34700338","MA1\/GMT":"3.51018923","MA1\/UNI":"0.11983204","MA1\/CRV":"1.27525119","MA1\/BAL":"0.15997214","MA1\/GRT":"6.32939633","MA1\/APE":"0.44756867","DAI\/USD":"1.01823058","DAI\/RUB":"96.43000000","DAI\/EUR":"0.94944498","DAI\/BTC":"0.00003900","DAI\/ETH":"0.00063830","DAI\/BCH":"0.00507200","DAI\/LTC":"0.01672442","DAI\/DAA":"0.04011114","DAI\/UST":"1.01826822","DAI\/XRP":"2.12494491","DAI\/DOG":"16.71230503","DAI\/TRX":"12.67148489","DAI\/BNB":"0.00482415","DAI\/MA1":"1.99937798","DAI\/DAI":"1.00000000","DAI\/DOT":"0.25466117","DAI\/US1":"1.01805321","DAI\/LI1":"0.17036199","DAI\/SA1":"3.54391768","DAI\/MA2":"3.70742022","DAI\/AA1":"0.01893595","DAI\/SU1":"1.72473618","DAI\/CA1":"0.87703502","DAI\/1I1":"4.41731562","DAI\/GA1":"72.50375940","DAI\/LDO":"0.69379092","DAI\/GMT":"7.01819505","DAI\/UNI":"0.23958954","DAI\/CRV":"2.54970915","DAI\/BAL":"0.31984477","DAI\/GRT":"12.65485564","DAI\/APE":"0.89485895","DOT\/USD":"3.99837387","DOT\/RUB":"378.66000000","DOT\/EUR":"3.72826753","DOT\/BTC":"0.00015314","DOT\/ETH":"0.00250648","DOT\/BCH":"0.01991665","DOT\/LTC":"0.06567323","DOT\/DAA":"0.15750789","DOT\/UST":"3.99852165","DOT\/XRP":"8.34420450","DOT\/DOG":"65.62564991","DOT\/TRX":"49.75821288","DOT\/BNB":"0.01894342","DOT\/MA1":"7.85113000","DOT\/DAI":"3.92678627","DOT\/DOT":"1.00000000","DOT\/US1":"3.99767736","DOT\/LI1":"0.66897514","DOT\/SA1":"13.91620728","DOT\/MA2":"14.55824683","DOT\/AA1":"0.07435743","DOT\/SU1":"6.77267036","DOT\/CA1":"3.44392906","DOT\/1I1":"17.34585433","DOT\/GA1":"284.70676692","DOT\/LDO":"2.72436866","DOT\/GMT":"27.55895197","DOT\/UNI":"0.94081694","DOT\/CRV":"10.01216288","DOT\/BAL":"1.25596206","DOT\/GRT":"49.69291339","DOT\/APE":"3.51391982","US1\/USD":"1.00017423","US1\/RUB":"94.72000000","US1\/EUR":"0.93260841","US1\/BTC":"0.00003831","US1\/ETH":"0.00062698","US1\/BCH":"0.00498206","US1\/LTC":"0.01642785","US1\/DAA":"0.03939985","US1\/UST":"1.00021119","US1\/XRP":"2.08726311","US1\/DOG":"16.41594454","US1\/TRX":"12.44678055","US1\/BNB":"0.00473861","US1\/MA1":"1.96392287","US1\/DAI":"0.98226693","US1\/DOT":"0.25014525","US1\/US1":"1.00000000","US1\/LI1":"0.16734095","US1\/SA1":"3.48107313","US1\/MA2":"3.64167628","US1\/AA1":"0.01860016","US1\/SU1":"1.69415131","US1\/CA1":"0.86148249","US1\/1I1":"4.33898305","US1\/GA1":"71.21804511","US1\/LDO":"0.68148788","US1\/GMT":"6.89374090","US1\/UNI":"0.23534089","US1\/CRV":"2.50449498","US1\/BAL":"0.31417294","US1\/GRT":"12.43044619","US1\/APE":"0.87899035","LI1\/USD":"5.97686464","LI1\/RUB":"566.03000000","LI1\/EUR":"5.57310323","LI1\/BTC":"0.00022892","LI1\/ETH":"0.00374674","LI1\/BCH":"0.02977189","LI1\/LTC":"0.09816990","LI1\/DAA":"0.23544656","LI1\/UST":"5.97708553","LI1\/XRP":"12.47311591","LI1\/DOG":"98.09878683","LI1\/TRX":"74.37976347","LI1\/BNB":"0.02831707","LI1\/MA1":"11.73605640","LI1\/DAI":"5.86985378","LI1\/DOT":"1.49482385","LI1\/US1":"5.97582348","LI1\/LI1":"1.00000000","LI1\/SA1":"20.80227857","LI1\/MA2":"21.76201461","LI1\/AA1":"0.11115126","LI1\/SU1":"10.12394920","LI1\/CA1":"5.14806730","LI1\/1I1":"25.92899679","LI1\/GA1":"425.58646617","LI1\/LDO":"4.07245126","LI1\/GMT":"41.19577875","LI1\/UNI":"1.40635560","LI1\/CRV":"14.96641988","LI1\/BAL":"1.87744204","LI1\/GRT":"74.28215223","LI1\/APE":"5.25269117","SA1\/USD":"0.28731779","SA1\/RUB":"27.21000000","SA1\/EUR":"0.26790831","SA1\/BTC":"0.00001100","SA1\/ETH":"0.00018011","SA1\/BCH":"0.00143118","SA1\/LTC":"0.00471919","SA1\/DAA":"0.01131831","SA1\/UST":"0.28732841","SA1\/XRP":"0.59960335","SA1\/DOG":"4.71577123","SA1\/TRX":"3.57555848","SA1\/BNB":"0.00136125","SA1\/MA1":"0.56417168","SA1\/DAI":"0.28217360","SA1\/DOT":"0.07185866","SA1\/US1":"0.28726774","SA1\/LI1":"0.04807166","SA1\/SA1":"1.00000000","SA1\/MA2":"1.04613610","SA1\/AA1":"0.00534323","SA1\/SU1":"0.48667501","SA1\/CA1":"0.24747613","SA1\/1I1":"1.24644984","SA1\/GA1":"20.45864662","SA1\/LDO":"0.19576948","SA1\/GMT":"1.98034934","SA1\/UNI":"0.06760584","SA1\/CRV":"0.71946060","SA1\/BAL":"0.09025175","SA1\/GRT":"3.57086614","SA1\/APE":"0.25250557","MA2\/USD":"0.27464666","MA2\/RUB":"26.01000000","MA2\/EUR":"0.25609317","MA2\/BTC":"0.00001052","MA2\/ETH":"0.00017217","MA2\/BCH":"0.00136807","MA2\/LTC":"0.00451107","MA2\/DAA":"0.01081915","MA2\/UST":"0.27465681","MA2\/XRP":"0.57315998","MA2\/DOG":"4.50779896","MA2\/TRX":"3.41787122","MA2\/BNB":"0.00130122","MA2\/MA1":"0.53929090","MA2\/DAI":"0.26972934","MA2\/DOT":"0.06868959","MA2\/US1":"0.27459882","MA2\/LI1":"0.04595163","MA2\/SA1":"0.95589857","MA2\/MA2":"1.00000000","MA2\/AA1":"0.00510758","MA2\/SU1":"0.46521195","MA2\/CA1":"0.23656207","MA2\/1I1":"1.19147962","MA2\/GA1":"19.55639098","MA2\/LDO":"0.18713577","MA2\/GMT":"1.89301310","MA2\/UNI":"0.06462433","MA2\/CRV":"0.68773136","MA2\/BAL":"0.08627152","MA2\/GRT":"3.41338583","MA2\/APE":"0.24136971","AA1\/USD":"53.77235266","AA1\/RUB":"5092.43000000","AA1\/EUR":"50.13981249","AA1\/BTC":"0.00205958","AA1\/ETH":"0.03370850","AA1\/BCH":"0.26785022","AA1\/LTC":"0.88321002","AA1\/DAA":"2.11825363","AA1\/UST":"53.77434002","AA1\/XRP":"112.21749669","AA1\/DOG":"882.57019064","AA1\/TRX":"669.17608410","AA1\/BNB":"0.25476162","AA1\/MA1":"105.58635704","AA1\/DAI":"52.80960282","AA1\/DOT":"13.44855543","AA1\/US1":"53.76298564","AA1\/LI1":"8.99674929","AA1\/SA1":"187.15288497","AA1\/MA2":"195.78738947","AA1\/AA1":"1.00000000","AA1\/SU1":"91.08263280","AA1\/CA1":"46.31587085","AA1\/1I1":"233.27668346","AA1\/GA1":"3828.89473684","AA1\/LDO":"36.63882294","AA1\/GMT":"370.62809316","AA1\/UNI":"12.65262870","AA1\/CRV":"134.64912745","AA1\/BAL":"16.89087532","AA1\/GRT":"668.29790026","AA1\/APE":"47.25714551","SU1\/USD":"0.59036889","SU1\/RUB":"55.91000000","SU1\/EUR":"0.55048708","SU1\/BTC":"0.00002261","SU1\/ETH":"0.00037009","SU1\/BCH":"0.00294074","SU1\/LTC":"0.00969680","SU1\/DAA":"0.02325639","SU1\/UST":"0.59039071","SU1\/XRP":"1.23204055","SU1\/DOG":"9.68977470","SU1\/TRX":"7.34691196","SU1\/BNB":"0.00279704","SU1\/MA1":"1.15923699","SU1\/DAI":"0.57979882","SU1\/DOT":"0.14765225","SU1\/US1":"0.59026605","SU1\/LI1":"0.09877568","SU1\/SA1":"2.05475928","SU1\/MA2":"2.14955786","SU1\/AA1":"0.01097904","SU1\/SU1":"1.00000000","SU1\/CA1":"0.50850387","SU1\/1I1":"2.56115437","SU1\/GA1":"42.03759398","SU1\/LDO":"0.40225916","SU1\/GMT":"4.06914119","SU1\/UNI":"0.13891373","SU1\/CRV":"1.47831835","SU1\/BAL":"0.18544562","SU1\/GRT":"7.33727034","SU1\/APE":"0.51883816","CA1\/USD":"1.16099194","CA1\/RUB":"109.95000000","CA1\/EUR":"1.08256223","CA1\/BTC":"0.00004447","CA1\/ETH":"0.00072780","CA1\/BCH":"0.00578312","CA1\/LTC":"0.01906927","CA1\/DAA":"0.04573494","CA1\/UST":"1.16103485","CA1\/XRP":"2.42287351","CA1\/DOG":"19.05545927","CA1\/TRX":"14.44809461","CA1\/BNB":"0.00550053","CA1\/MA1":"2.27970143","CA1\/DAI":"1.14020533","CA1\/DOT":"0.29036603","CA1\/US1":"1.16078970","CA1\/LI1":"0.19424765","CA1\/SA1":"4.04079383","CA1\/MA2":"4.22722030","CA1\/AA1":"0.02159087","CA1\/SU1":"1.96655339","CA1\/CA1":"1.00000000","CA1\/1I1":"5.03664682","CA1\/GA1":"82.66917293","CA1\/LDO":"0.79106411","CA1\/GMT":"8.00218341","CA1\/UNI":"0.27318128","CA1\/CRV":"2.90719196","CA1\/BAL":"0.36468871","CA1\/GRT":"14.42913386","CA1\/APE":"1.02032294","1I1\/USD":"0.23050890","1I1\/RUB":"21.83000000","1I1\/EUR":"0.21493709","1I1\/BTC":"0.00000883","1I1\/ETH":"0.00014450","1I1\/BCH":"0.00114821","1I1\/LTC":"0.00378611","1I1\/DAA":"0.00908043","1I1\/UST":"0.23051742","1I1\/XRP":"0.48104892","1I1\/DOG":"3.78336222","1I1\/TRX":"2.86859396","1I1\/BNB":"0.00109210","1I1\/MA1":"0.45262285","1I1\/DAI":"0.22638183","1I1\/DOT":"0.05765066","1I1\/US1":"0.23046875","1I1\/LI1":"0.03856686","1I1\/SA1":"0.80227857","1I1\/MA2":"0.83929258","1I1\/AA1":"0.00428676","1I1\/SU1":"0.39044894","1I1\/CA1":"0.19854479","1I1\/1I1":"1.00000000","1I1\/GA1":"16.41353383","1I1\/LDO":"0.15706166","1I1\/GMT":"1.58879185","1I1\/UNI":"0.05423872","1I1\/CRV":"0.57720783","1I1\/BAL":"0.07240705","1I1\/GRT":"2.86482940","1I1\/APE":"0.20257981","GA1\/USD":"0.01404383","GA1\/RUB":"1.33000000","GA1\/EUR":"0.01309511","GA1\/BTC":"0.00000054","GA1\/ETH":"0.00000880","GA1\/BCH":"0.00006995","GA1\/LTC":"0.00023067","GA1\/DAA":"0.00055323","GA1\/UST":"0.01404435","GA1\/XRP":"0.02930807","GA1\/DOG":"0.23050260","GA1\/TRX":"0.17477004","GA1\/BNB":"0.00006654","GA1\/MA1":"0.02757620","GA1\/DAI":"0.01379239","GA1\/DOT":"0.00351239","GA1\/US1":"0.01404139","GA1\/LI1":"0.00234970","GA1\/SA1":"0.04887909","GA1\/MA2":"0.05113418","GA1\/AA1":"0.00026117","GA1\/SU1":"0.02378823","GA1\/CA1":"0.01209641","GA1\/1I1":"0.06092533","GA1\/GA1":"1.00000000","GA1\/LDO":"0.00956903","GA1\/GMT":"0.09679767","GA1\/UNI":"0.00330451","GA1\/CRV":"0.03516658","GA1\/BAL":"0.00441142","GA1\/GRT":"0.17454068","GA1\/APE":"0.01234224","LDO\/USD":"1.46763319","LDO\/RUB":"138.99000000","LDO\/EUR":"1.36848863","LDO\/BTC":"0.00005621","LDO\/ETH":"0.00092002","LDO\/BCH":"0.00731056","LDO\/LTC":"0.02410585","LDO\/DAA":"0.05781446","LDO\/UST":"1.46768743","LDO\/XRP":"3.06280300","LDO\/DOG":"24.08838821","LDO\/TRX":"18.26412615","LDO\/BNB":"0.00695332","LDO\/MA1":"2.88181630","LDO\/DAI":"1.44135642","LDO\/DOT":"0.36705752","LDO\/US1":"1.46737753","LDO\/LI1":"0.24555236","LDO\/SA1":"5.10804851","LDO\/MA2":"5.34371396","LDO\/AA1":"0.02729345","LDO\/SU1":"2.48595958","LDO\/CA1":"1.26412005","LDO\/1I1":"6.36692625","LDO\/GA1":"104.50375940","LDO\/LDO":"1.00000000","LDO\/GMT":"10.11572052","LDO\/UNI":"0.34533393","LDO\/CRV":"3.67503966","LDO\/BAL":"0.46101032","LDO\/GRT":"18.24015748","LDO\/APE":"1.28981069","GMT\/USD":"0.14508439","GMT\/RUB":"13.74000000","GMT\/EUR":"0.13528336","GMT\/BTC":"0.00000556","GMT\/ETH":"0.00009095","GMT\/BCH":"0.00072269","GMT\/LTC":"0.00238301","GMT\/DAA":"0.00571531","GMT\/UST":"0.14508976","GMT\/XRP":"0.30277655","GMT\/DOG":"2.38128250","GMT\/TRX":"1.80551905","GMT\/BNB":"0.00068738","GMT\/MA1":"0.28488493","GMT\/DAI":"0.14248678","GMT\/DOT":"0.03628585","GMT\/US1":"0.14505912","GMT\/LI1":"0.02427433","GMT\/SA1":"0.50496141","GMT\/MA2":"0.52825836","GMT\/AA1":"0.00269812","GMT\/SU1":"0.24575210","GMT\/CA1":"0.12496589","GMT\/1I1":"0.62940907","GMT\/GA1":"10.33082707","GMT\/LDO":"0.09885603","GMT\/GMT":"1.00000000","GMT\/UNI":"0.03413834","GMT\/CRV":"0.36329984","GMT\/BAL":"0.04557365","GMT\/GRT":"1.80314961","GMT\/APE":"0.12750557","UNI\/USD":"4.24989573","UNI\/RUB":"402.48000000","UNI\/EUR":"3.96279806","UNI\/BTC":"0.00016278","UNI\/ETH":"0.00266415","UNI\/BCH":"0.02116953","UNI\/LTC":"0.06980447","UNI\/DAA":"0.16741609","UNI\/UST":"4.25005280","UNI\/XRP":"8.86910533","UNI\/DOG":"69.75389948","UNI\/TRX":"52.88830486","UNI\/BNB":"0.02013507","UNI\/MA1":"8.34501348","UNI\/DAI":"4.17380483","UNI\/DOT":"1.06290604","UNI\/US1":"4.24915541","UNI\/LI1":"0.71105772","UNI\/SA1":"14.79162073","UNI\/MA2":"15.47404844","UNI\/AA1":"0.07903496","UNI\/SU1":"7.19871222","UNI\/CA1":"3.66057299","UNI\/1I1":"18.43701328","UNI\/GA1":"302.61654135","UNI\/LDO":"2.89574790","UNI\/GMT":"29.29257642","UNI\/UNI":"1.00000000","UNI\/CRV":"10.64198837","UNI\/BAL":"1.33496965","UNI\/GRT":"52.81889764","UNI\/APE":"3.73496659","CRV\/USD":"0.39935166","CRV\/RUB":"37.82000000","CRV\/EUR":"0.37237384","CRV\/BTC":"0.00001530","CRV\/ETH":"0.00025034","CRV\/BCH":"0.00198925","CRV\/LTC":"0.00655934","CRV\/DAA":"0.01573166","CRV\/UST":"0.39936642","CRV\/XRP":"0.83340679","CRV\/DOG":"6.55459272","CRV\/TRX":"4.96977661","CRV\/BNB":"0.00189204","CRV\/MA1":"0.78415924","CRV\/DAI":"0.39220160","CRV\/DOT":"0.09987852","CRV\/US1":"0.39928209","CRV\/LI1":"0.06681625","CRV\/SA1":"1.38993017","CRV\/MA2":"1.45405613","CRV\/AA1":"0.00742671","CRV\/SU1":"0.67644429","CRV\/CA1":"0.34397453","CRV\/1I1":"1.73247824","CRV\/GA1":"28.43609023","CRV\/LDO":"0.27210591","CRV\/GMT":"2.75254731","CRV\/UNI":"0.09396740","CRV\/CRV":"1.00000000","CRV\/BAL":"0.12544363","CRV\/GRT":"4.96325459","CRV\/APE":"0.35096511","BAL\/USD":"3.18351486","BAL\/RUB":"301.49000000","BAL\/EUR":"2.96845554","BAL\/BTC":"0.00012193","BAL\/ETH":"0.00199566","BAL\/BCH":"0.01585769","BAL\/LTC":"0.05228918","BAL\/DAA":"0.12540816","BAL\/UST":"3.18363252","BAL\/XRP":"6.64367563","BAL\/DOG":"52.25129983","BAL\/TRX":"39.61760841","BAL\/BNB":"0.01508280","BAL\/MA1":"6.25108853","BAL\/DAI":"3.12651664","BAL\/DOT":"0.79620240","BAL\/US1":"3.18296030","BAL\/LI1":"0.53263961","BAL\/SA1":"11.08011760","BAL\/MA2":"11.59131103","BAL\/AA1":"0.05920356","BAL\/SU1":"5.39241638","BAL\/CA1":"2.74206457","BAL\/1I1":"13.81081081","BAL\/GA1":"226.68421053","BAL\/LDO":"2.16914886","BAL\/GMT":"21.94250364","BAL\/UNI":"0.74908070","BAL\/CRV":"7.97170809","BAL\/BAL":"1.00000000","BAL\/GRT":"39.56561680","BAL\/APE":"2.79779139","GRT\/USD":"0.08046165","GRT\/RUB":"7.62000000","GRT\/EUR":"0.07502614","GRT\/BTC":"0.00000308","GRT\/ETH":"0.00005044","GRT\/BCH":"0.00040079","GRT\/LTC":"0.00132158","GRT\/DAA":"0.00316962","GRT\/UST":"0.08046463","GRT\/XRP":"0.16791538","GRT\/DOG":"1.32062392","GRT\/TRX":"1.00131406","GRT\/BNB":"0.00038121","GRT\/MA1":"0.15799295","GRT\/DAI":"0.07902105","GRT\/DOT":"0.02012359","GRT\/US1":"0.08044764","GRT\/LI1":"0.01346218","GRT\/SA1":"0.28004410","GRT\/MA2":"0.29296424","GRT\/AA1":"0.00149634","GRT\/SU1":"0.13629047","GRT\/CA1":"0.06930423","GRT\/1I1":"0.34906093","GRT\/GA1":"5.72932331","GRT\/LDO":"0.05482409","GRT\/GMT":"0.55458515","GRT\/UNI":"0.01893262","GRT\/CRV":"0.20148070","GRT\/BAL":"0.02527447","GRT\/GRT":"1.00000000","GRT\/APE":"0.07071269","APE\/USD":"1.13786713","APE\/RUB":"107.76000000","APE\/EUR":"1.06099960","APE\/BTC":"0.00004358","APE\/ETH":"0.00071330","APE\/BCH":"0.00566793","APE\/LTC":"0.01868945","APE\/DAA":"0.04482399","APE\/UST":"1.13790919","APE\/XRP":"2.37461437","APE\/DOG":"18.67590988","APE\/TRX":"14.16031537","APE\/BNB":"0.00539097","APE\/MA1":"2.23429401","APE\/DAI":"1.11749456","APE\/DOT":"0.28458248","APE\/US1":"1.13766892","APE\/LI1":"0.19037860","APE\/SA1":"3.96030871","APE\/MA2":"4.14302191","APE\/AA1":"0.02116082","APE\/SU1":"1.92738329","APE\/CA1":"0.98008186","APE\/1I1":"4.93632616","APE\/GA1":"81.02255639","APE\/LDO":"0.77530758","APE\/GMT":"7.84279476","APE\/UNI":"0.26774001","APE\/CRV":"2.84928609","APE\/BAL":"0.35742479","APE\/GRT":"14.14173228","APE\/APE":"1.00000000"};
+var itogBalance;
+
+$(document).ready(function()
+{
+   var clipboard = new Clipboard('#PayeerAccount');
+   clipboard.on('success', function(e)
+   {
+      $(e.trigger).addClass('copy-payeer-account');
+      /*
+      var PayeerAccountN = $(e.trigger).parent('li').find('b');
+      PayeerAccountN.addClass('copy-payeer-account');
+
+      setTimeout(function()
+      {
+         PayeerAccountN.removeClass('copy-payeer-account');
+      }, 1000);
+      */
+   });
+
+   $('.header-overlay .balance-item').hover(
+   function()
+   {
+      $(this).css({'background': $(this).css('border-top-color')});
+   },
+   function()
+   {
+      $(this).css({'background': ''});
+   });
+
+   
+   $('.wallet').on('mouseenter click', '.fa-info-circle', function ()
+   {
+      var $thisOffset = $(this).offset();
+
+      var tooltip = $('.wallet .js-tool-tip-ordertype');
+      tooltip.html($(this).data('title'));
+      tooltip.show();
+
+      tooltip.offset({
+         top: $thisOffset.top + 20,
+         left: $thisOffset.left - tooltip.outerWidth() / 2 + 2
+      });
+   });
+
+   $('.wallet .fa-info-circle').on('mouseleave', function ()
+   {
+      $('.wallet .js-tool-tip-ordertype').hide();
+   });
+});
+
+function balanceUpdate()
+{
+	ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info2/templates/top2/ajax.php?action=balance2&sessid=f4b3af2df9e4e7e7cb30490755c7a644', afterSuccess: 'afterBalanceUpdate'}, {nprogress: 'N', type: 'null', formType: 'json'});
+}
+
+function afterBalanceUpdate(e, data)
+{
+   //pre(['afterBalanceUpdate', data]);
+
+   if (data != '')
+	{
+      itogBalance = data;
+
+      var itogSum = 0;
+
+      if (data.balance != '' && data.balance != undefined)
+      {
+         for (var curr in data.balance)
+         {
+            //pre([curr, data.balance[curr]]);
+
+            var ar = data.balance[curr];
+
+            var n = Number(ar[0].replace(/[\s,]+/g, '') + '.' + ar[1]);
+
+            if (isNaN(n))
+            {
+                n = 0;
+            }
+
+            totalByCurrency = Math.ceil10(arInternalExchangeRate[curr + '/' + itogCurr] * n, -arCurrPr[itogCurr]);
+
+            if (isNaN(totalByCurrency))
+            {
+                totalByCurrency = 0;
+            }
+
+            itogSum += totalByCurrency;
+            //pre(itogSum);
+
+            $('.account_balance .curr-' + curr + ' span.int').html(ar['0']);
+            $('.account_balance .curr-' + curr + ' span.pr').html('.' + ar['1']);
+
+            $('.header .wallet .balance .balance-curr--' + curr.toLowerCase() + ' s').html(ar['0'] + '<sup>.' + ar['1'] +'</sup>');
+
+            $('.div-balance-update .balance-item--' + curr.toLowerCase() + ' .n-select__selected-value-caption').html(ar['0'] + '.' + ar['1']);
+         }
+
+         if ($('.trade-management').length)
+         {
+            var arPair = $('#id_trade_pair').val().split('_');
+            //pre(data.balance[arPair[0]]);
+
+            var sumForSell = data.balance[arPair[0]].join('.').replace(/[^0-9\.]+/g, '');
+            var sumForBuy = data.balance[arPair[1]].join('.').replace(/[^0-9\.]+/g, '');
+
+            $('#id_trade_balance_for_sell').val(sumForSell);
+            $('#id_trade_balance_for_sell').closest('.trade-management__balance-sum').find('div').html(tradeAmountFormat(sumForSell));
+
+            $('#id_trade_balance_for_buy').val(sumForBuy);
+            $('#id_trade_balance_for_buy').closest('.trade-management__balance-sum').find('div').html(tradeAmountFormat(sumForBuy));
+         }
+      }
+
+      if (data.balancet != '' && data.balancet != undefined)
+      {
+         var bShowActiveOrdersTitle = false;
+
+         for (var curr in data.balancet)
+         {
+            var ar = data.balancet[curr];
+            //pre([curr, ar]);
+
+            var n = Number(ar[0].replace(/[\s,]+/g, '') + '.' + ar[1]);
+
+            if (isNaN(n))
+            {
+                n = 0;
+            }
+
+            totalByCurrency = Math.ceil10(arInternalExchangeRate[curr + '/' + itogCurr] * n, -arCurrPr[itogCurr]);
+
+            if (isNaN(totalByCurrency))
+            {
+                totalByCurrency = 0;
+            }
+
+            itogSum += totalByCurrency;
+
+            $('.account_balance .trade-curr-' + curr + ' span.int').html(ar['0']);
+            $('.account_balance .trade-curr-' + curr + ' span.pr').html('.' + ar['1']);
+
+            $('.header .wallet .balance .balance-trade-curr--' + curr.toLowerCase() + ' s').html(ar['0'] + '<sup>.' + ar['1'] +'</sup>');
+
+            if (n > 0)
+            {
+               bShowActiveOrdersTitle = true;
+
+               $('.header .wallet .balance .balance-trade-curr--' + curr.toLowerCase()).show();
+
+               $('.account_balance .trade-curr-' + curr).removeClass('balance-0');
+
+               if ($('.abn-h2 span.active').data('type') == 'active-orders')
+               {
+                  $('.account_balance .trade-curr-' + curr).show();
+               }
+            }
+            else
+            {
+               $('.header .wallet .balance .balance-trade-curr--' + curr.toLowerCase()).hide();
+
+               $('.account_balance .trade-curr-' + curr).removeClass('balance-0').addClass('balance-0');
+
+               if ($('.abn-h2 span.active').data('type') == 'active-orders')
+               {
+                  $('.account_balance .trade-curr-' + curr).hide();
+               }
+            }
+         }
+
+         if (bShowActiveOrdersTitle)
+         {
+            $('.balance-title-active-orders').show();
+         }
+         else
+         {
+            $('.balance-title-active-orders').hide();
+
+            if ($('.main_abalance').length)
+            {
+               $('.account_balance_new > li').hide();
+         		$('.account_balance_new > li.all').not('.balance-0').show();
+
+         		$('.abn-h2 span.active').removeClass('active');
+         		$('.main_abalance span[data-type="all"]').addClass('active');
+            }
+         }
+      }
+
+      
+      itogSum = number_format(itogSum, arCurrPr[itogCurr], '.', ',');
+      //pre('itogSum = ' + itogSum);
+
+      arItog = itogSum.split('.');
+
+      $('.account_balance .itog span.int').html(arItog['0']);
+      $('.account_balance .itog span.pr').html('.' + arItog['1']);
+
+      $('.account_balance .itog').attr('class', '').addClass('itog itog-' + itogCurr);
+      $('.account_balance li.itog .val .curr').attr('class', '').addClass('curr fa fa-' + itogCurr.toLowerCase());
+
+      $('.header-total .icon-padding-top').attr('class', '').addClass('icon-padding-top icon-' + itogCurr.toLowerCase());
+      $('.header-total .btn--amount s').html(arItog['0'] + '<sup>.' + arItog['1'] + '</sup>');
+
+      $('.wallet-total .icon-padding-top').attr('class', '').addClass('icon-padding-top icon-' + itogCurr.toLowerCase());
+      $('.wallet .wallet-total s').html(arItog['0'] + '<sup>.' + arItog['1'] + '</sup>');
+
+      	}
+	else
+	{
+		window.location.reload();
+	}
+}
+
+var iBalanceUpdate = setInterval(function()
+{
+	balanceUpdate();
+}, 60000 * 5);
+
+function onAfterBalanceUpdate(data)
+{
+   //pre(['onAfterBalanceUpdate', data]);
+
+   afterBalanceUpdate('#', data);
+}
+
+function onAfterCardBalanceUpdate(data)
+{
+   //pre(['onAfterCardBalanceUpdate', data]);
+
+   afterBalanceUpdate('#', {cards: [data.card]});
+}
+
+function setTypeLight(type)
+{
+   $('#chart').html('');
+
+	$('body').removeClass('black night');
+
+   $('.actions-theme a').removeClass('selected');
+   $('.actions-theme a.' + type).addClass('selected');
+
+	switch (type)
+	{
+		case 'light':
+		break;
+
+		case 'contrast':
+			$('body').addClass('black night');
+		break;
+	}
+
+   if (window['chartCreate']) chartCreate();
+   $('.chart-timeline button.current').click();
+   $('.trade-management__times button.is-active-time-btn').click();
+
+	ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info2/templates/top2/ajax.php?action=param&param=typelight&typelight=' + type + '&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'});
+}
+
+function afterCardsCheck(e, data)
+{
+   $.pjax(
+   {
+      url: data,
+      type: 'GET',
+      container: '#pjax-container'
+   });
+}
+
+
+function tradeAfterRequestRefundByCurrency(e, data)
+{
+   //pre(data['winData']);
+
+   $('.dialog-trade-request-detail').remove();
+
+   $('.content').addClass('blur');
+
+   $('.header-overlay .statusinfo .statusinfo-icon > span').attr('class', '').addClass('icon-approved');
+
+   $('.header-overlay .statusinfo .statusinfo-title').html(data['winData']['title']);
+   $('.header-overlay .statusinfo .statusinfo-direction').html(data['winData']['direction']);
+   $('.header-overlay .statusinfo .statusinfo-descr').html(data['winData']['descr']);
+
+   $('.header-overlay').addClass('show').find('.statusinfo').show();
+
+   winErrorAutoClose();
+}
+
+
+setTypeLight('contrast');
+</script>
+
+
+								  </div><!--/col -->
+		 </div><!--/row -->
+	</header>
+	<main class="main">
+      <div class="row row--page">
+          <aside class="col col--sidebar sidebar">
+				<script type="text/javascript" src="/bitrix/templates/difiz_account_new/components/bitrix/menu/left/script.new.js?1694609170"></script><div class="menu">
+	<ul>
+										<li class="dashboard"><a href="/en/account/" class="pjax current"><i class="icon-dashboard" title="Balance"></i><span>Balance</span></a></li>
+										<li class="add"><a href="/en/account/add/" class="pjax "><i class="icon-add" title="Add"></i><span>Add</span></a></li>
+										<li class="transfer"><a href="/en/account/send/" class="pjax "><i class="icon-transfer" title="Transfer"></i><span>Transfer</span></a></li>
+										<li class="trade"><a href="/en/account/trade/" class="pjax "><i class="icon-trade" title="Trade"></i><span>Trade</span></a></li>
+										<li class="exchange"><a href="/en/account/exchange/" class="pjax "><i class="icon-exchange" title="Exchange"></i><span>Exchange</span></a></li>
+										<li class="time"><a href="/en/account/history/" class="pjax "><i class="icon-time" title="History"></i><span>History</span></a></li>
+										</ul>
+				<ul>
+								<li class="msettings"><a href="/en/account/api/" class="pjax "><i class="icon-msettings" title="API<sup>NEW</sup>"></i><span>API<sup>NEW</sup></span></a></li>
+			</ul>
+</div>
+<div class="sidebar-btn">
+	 <button id="btn-sidebar"><i class="icon-arrow-left"></i></button>
+</div>
+          </aside>
+          <div class="col col--content content wbody" id="pjax-container">
+									<h1>Balance<span class="line"></span></h1>
+				<div class="main_abalance">
+
+
+<p>Available accounts</p>
+
+<div class="info-security">
+	<div class="info-security__section">
+		<button type="button" class="info-security__btn-close" onclick="$('.info-security').slideUp(); ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.security.promo/templates/1/ajax.php?action=param&param=isave'}, {nprogress: 'N', type: 'null'}); return false;"><i class="close-icon"></i></button>
+		<div class="info-security__notice">Please save the login data in a safe place</div>
+		<div class="info-security__content">
+			<div class="info-security__info">
+				<div class="info-security__info-item">
+					<div class="info-security__name">Login:</div>
+					<div class="info-security__data">P1103517987</div>
+				</div>
+				<div class="info-security__info-item">
+					<div class="info-security__name">Password:</div>
+					<div class="info-security__data">8kBuK9E7</div>
+				</div>
+
+									<div class="info-security__info-item">
+						<div class="info-security__name">E-mail:</div>
+						<div class="info-security__data">ahmad.majdoub2s3vxv@gmail.com</div>
+					</div>
+													<div class="info-security__info-item">
+						<div class="info-security__name">Secret code:</div>
+						<div class="info-security__data">706809</div>
+					</div>
+																			<div class="info-security__info-item">
+							<div class="info-security__name">Master key:</div>
+							<div class="info-security__data">012</div>
+						</div>
+													<a class="info-security__btn-download btn-general" href="/bitrix/components/payeer/account.security.promo/templates/1/ajax.php?action=savetxt">DOWNLOAD  .TXT FILE</a>
+			</div>
+		</div>
+									<div class="info-security__desc">
+				Your account is <a href='/en/account/settings/?verification' class='pjax'>not Verified</a>, due to our AML policy your current withdraw limit is 999 USD per day				</div>
+						</div>
+</div>
+
+<script type="text/javascript" src="/bitrix/components/payeer/account.info/templates/balance2/script.new.js?1694609171"></script>
+<div class="abn-h2">
+	<span class="active" data-type="all">All accounts</span>		<span data-type="active-orders" class="balance-title-active-orders" style="display: none;">Active orders</span>
+</div>
+<ul id="main_list_balance_block" class="account_balance account_balance_new hide">
+         <li class="USD curr-USD fiat all" id="balanceidUSD" data-id="balanceidUSD" title="Payeer USD">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">USD</div>
+					<div class="balance__extra-currency">
+											</div>
+					<div class="balance__icon-currency balance-item--usd">
+						<a href="#"  data-curr="USD" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=USD&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="Payeer USD - set as default currency"><i class="icon-usd"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache curr-USD">
+						<span class="curr fa fa-usd"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="pjax balance__btn-deposit" href="/en/account/add/?_pjax=Y&curr=USD" >Deposit</a>
+					<a class="pjax balance__btn-deposit" href="/en/account/send/?_pjax=Y&currPS=USD">Withdraw</a>
+				</div>
+			</div>
+      </li>
+         <li class="RUB curr-RUB fiat all" id="balanceidRUB" data-id="balanceidRUB" title="Payeer RUB">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">RUB</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--rub">
+						<a href="#"  data-curr="RUB" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=RUB&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="Payeer RUB - set as default currency"><i class="icon-rub"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache curr-RUB">
+						<span class="curr fa fa-rub"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="pjax balance__btn-deposit" href="/en/account/add/?_pjax=Y&curr=RUB" >Deposit</a>
+					<a class="pjax balance__btn-deposit" href="/en/account/send/?_pjax=Y&currPS=RUB">Withdraw</a>
+				</div>
+			</div>
+      </li>
+         <li class="EUR curr-EUR fiat all" id="balanceidEUR" data-id="balanceidEUR" title="Payeer EUR">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">EUR</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--eur">
+						<a href="#"  data-curr="EUR" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=EUR&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="Payeer EUR - set as default currency"><i class="icon-eur"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache curr-EUR">
+						<span class="curr fa fa-eur"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="pjax balance__btn-deposit" href="/en/account/add/?_pjax=Y&curr=EUR" >Deposit</a>
+					<a class="pjax balance__btn-deposit" href="/en/account/send/?_pjax=Y&currPS=EUR">Withdraw</a>
+				</div>
+			</div>
+      </li>
+         <li class="BTC curr-BTC crypt all" id="balanceidBTC" data-id="balanceidBTC" title="Bitcoin">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">BTC</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--btc">
+						<a href="#"  data-curr="BTC" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=BTC&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="Bitcoin - set as default currency"><i class="icon-btc"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache curr-BTC">
+						<span class="curr fa fa-btc"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00000000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="pjax balance__btn-deposit" href="/en/account/add/?_pjax=Y&curr=BTC" >Deposit</a>
+					<a class="pjax balance__btn-deposit" href="/en/account/send/?_pjax=Y&currPS=BTC">Withdraw</a>
+				</div>
+			</div>
+      </li>
+         <li class="UST curr-UST crypt all" id="balanceidUST" data-id="balanceidUST" title="Tether USDT">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">USDT</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--ust">
+						<a href="#"  data-curr="UST" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=UST&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="Tether USDT - set as default currency"><i class="icon-ust"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache curr-UST">
+						<span class="curr fa fa-ust"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="pjax balance__btn-deposit" href="/en/account/add/?_pjax=Y&curr=UST" >Deposit</a>
+					<a class="pjax balance__btn-deposit" href="/en/account/send/?_pjax=Y&currPS=UST">Withdraw</a>
+				</div>
+			</div>
+      </li>
+         <li class="ETH curr-ETH crypt all" id="balanceidETH" data-id="balanceidETH" title="Ethereum">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">ETH</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--eth">
+						<a href="#"  data-curr="ETH" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=ETH&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="Ethereum - set as default currency"><i class="icon-eth"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache curr-ETH">
+						<span class="curr fa fa-eth"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00000000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="pjax balance__btn-deposit" href="/en/account/add/?_pjax=Y&curr=ETH" >Deposit</a>
+					<a class="pjax balance__btn-deposit" href="/en/account/send/?_pjax=Y&currPS=ETH">Withdraw</a>
+				</div>
+			</div>
+      </li>
+         <li class="LTC curr-LTC crypt all" id="balanceidLTC" data-id="balanceidLTC" title="Litecoin">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">LTC</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--ltc">
+						<a href="#"  data-curr="LTC" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=LTC&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="Litecoin - set as default currency"><i class="icon-ltc"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache curr-LTC">
+						<span class="curr fa fa-ltc"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00000000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="pjax balance__btn-deposit" href="/en/account/add/?_pjax=Y&curr=LTC" >Deposit</a>
+					<a class="pjax balance__btn-deposit" href="/en/account/send/?_pjax=Y&currPS=LTC">Withdraw</a>
+				</div>
+			</div>
+      </li>
+         <li class="BNB curr-BNB crypt all" id="balanceidBNB" data-id="balanceidBNB" title="Binance Coin">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">BNB</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--bnb">
+						<a href="#"  data-curr="BNB" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=BNB&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="Binance Coin - set as default currency"><i class="icon-bnb"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache curr-BNB">
+						<span class="curr fa fa-bnb"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00000000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="pjax balance__btn-deposit" href="/en/account/add/?_pjax=Y&curr=BNB" >Deposit</a>
+					<a class="pjax balance__btn-deposit" href="/en/account/send/?_pjax=Y&currPS=BNB">Withdraw</a>
+				</div>
+			</div>
+      </li>
+         <li class="TRX curr-TRX crypt all" id="balanceidTRX" data-id="balanceidTRX" title="Tron">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">TRX</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--trx">
+						<a href="#"  data-curr="TRX" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=TRX&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="Tron - set as default currency"><i class="icon-trx"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache curr-TRX">
+						<span class="curr fa fa-trx"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.000000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="pjax balance__btn-deposit" href="/en/account/add/?_pjax=Y&curr=TRX" >Deposit</a>
+					<a class="pjax balance__btn-deposit" href="/en/account/send/?_pjax=Y&currPS=TRX">Withdraw</a>
+				</div>
+			</div>
+      </li>
+         <li class="XRP curr-XRP crypt all" id="balanceidXRP" data-id="balanceidXRP" title="Ripple">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">XRP</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--xrp">
+						<a href="#"  data-curr="XRP" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=XRP&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="Ripple - set as default currency"><i class="icon-xrp"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache curr-XRP">
+						<span class="curr fa fa-xrp"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.000000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="pjax balance__btn-deposit" href="/en/account/add/?_pjax=Y&curr=XRP" >Deposit</a>
+					<a class="pjax balance__btn-deposit" href="/en/account/send/?_pjax=Y&currPS=XRP">Withdraw</a>
+				</div>
+			</div>
+      </li>
+         <li class="BCH curr-BCH crypt all" id="balanceidBCH" data-id="balanceidBCH" title="Bitcoin Cash">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">BCH</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--bch">
+						<a href="#"  data-curr="BCH" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=BCH&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="Bitcoin Cash - set as default currency"><i class="icon-bch"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache curr-BCH">
+						<span class="curr fa fa-bch"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00000000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="pjax balance__btn-deposit" href="/en/account/add/?_pjax=Y&curr=BCH" >Deposit</a>
+					<a class="pjax balance__btn-deposit" href="/en/account/send/?_pjax=Y&currPS=BCH">Withdraw</a>
+				</div>
+			</div>
+      </li>
+         <li class="DAA curr-DAA crypt all" id="balanceidDAA" data-id="balanceidDAA" title="Dash">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">DASH</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--daa">
+						<a href="#"  data-curr="DAA" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=DAA&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="Dash - set as default currency"><i class="icon-daa"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache curr-DAA">
+						<span class="curr fa fa-daa"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00000000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="pjax balance__btn-deposit" href="/en/account/add/?_pjax=Y&curr=DAA" >Deposit</a>
+					<a class="pjax balance__btn-deposit" href="/en/account/send/?_pjax=Y&currPS=DAA">Withdraw</a>
+				</div>
+			</div>
+      </li>
+         <li class="DOG curr-DOG crypt all" id="balanceidDOG" data-id="balanceidDOG" title="Dogecoin">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">DOGE</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--dog">
+						<a href="#"  data-curr="DOG" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=DOG&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="Dogecoin - set as default currency"><i class="icon-dog"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache curr-DOG">
+						<span class="curr fa fa-dog"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00000000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="pjax balance__btn-deposit" href="/en/account/add/?_pjax=Y&curr=DOG" >Deposit</a>
+					<a class="pjax balance__btn-deposit" href="/en/account/send/?_pjax=Y&currPS=DOG">Withdraw</a>
+				</div>
+			</div>
+      </li>
+         <li class="DOT curr-DOT crypt all" id="balanceidDOT" data-id="balanceidDOT" title="Polkadot">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">DOT</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--dot">
+						<a href="#"  data-curr="DOT" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=DOT&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="Polkadot - set as default currency"><i class="icon-dot"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache curr-DOT">
+						<span class="curr fa fa-dot"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.000000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="pjax balance__btn-deposit" href="/en/account/add/?_pjax=Y&curr=DOT" >Deposit</a>
+					<a class="pjax balance__btn-deposit" href="/en/account/send/?_pjax=Y&currPS=DOT">Withdraw</a>
+				</div>
+			</div>
+      </li>
+         <li class="DAI curr-DAI crypt all" id="balanceidDAI" data-id="balanceidDAI" title="Dai">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">DAI</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--dai">
+						<a href="#"  data-curr="DAI" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=DAI&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="Dai - set as default currency"><i class="icon-dai"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache curr-DAI">
+						<span class="curr fa fa-dai"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="pjax balance__btn-deposit" href="/en/account/add/?_pjax=Y&curr=DAI" >Deposit</a>
+					<a class="pjax balance__btn-deposit" href="/en/account/send/?_pjax=Y&currPS=DAI">Withdraw</a>
+				</div>
+			</div>
+      </li>
+         <li class="MA1 curr-MA1 crypt all" id="balanceidMA1" data-id="balanceidMA1" title="Polygon">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">MATIC</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--ma1">
+						<a href="#"  data-curr="MA1" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=MA1&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="Polygon - set as default currency"><i class="icon-ma1"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache curr-MA1">
+						<span class="curr fa fa-ma1"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.0000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="pjax balance__btn-deposit" href="/en/account/add/?_pjax=Y&curr=MA1" >Deposit</a>
+					<a class="pjax balance__btn-deposit" href="/en/account/send/?_pjax=Y&currPS=MA1">Withdraw</a>
+				</div>
+			</div>
+      </li>
+         <li class="US1 curr-US1 crypt all" id="balanceidUS1" data-id="balanceidUS1" title="USD Coin">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">USDC</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--us1">
+						<a href="#"  data-curr="US1" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=US1&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="USD Coin - set as default currency"><i class="icon-us1"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache curr-US1">
+						<span class="curr fa fa-us1"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="pjax balance__btn-deposit" href="/en/account/add/?_pjax=Y&curr=US1" >Deposit</a>
+					<a class="pjax balance__btn-deposit" href="/en/account/send/?_pjax=Y&currPS=US1">Withdraw</a>
+				</div>
+			</div>
+      </li>
+         <li class="LI1 curr-LI1 crypt all" id="balanceidLI1" data-id="balanceidLI1" title="">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">LINK</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--li1">
+						<a href="#"  data-curr="LI1" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=LI1&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title=" - set as default currency"><i class="icon-li1"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache curr-LI1">
+						<span class="curr fa fa-li1"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.000000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="pjax balance__btn-deposit" href="/en/account/add/?_pjax=Y&curr=LI1" >Deposit</a>
+					<a class="pjax balance__btn-deposit" href="/en/account/send/?_pjax=Y&currPS=LI1">Withdraw</a>
+				</div>
+			</div>
+      </li>
+         <li class="SA1 curr-SA1 crypt all" id="balanceidSA1" data-id="balanceidSA1" title="">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">SAND</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--sa1">
+						<a href="#"  data-curr="SA1" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=SA1&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title=" - set as default currency"><i class="icon-sa1"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache curr-SA1">
+						<span class="curr fa fa-sa1"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="pjax balance__btn-deposit" href="/en/account/add/?_pjax=Y&curr=SA1" >Deposit</a>
+					<a class="pjax balance__btn-deposit" href="/en/account/send/?_pjax=Y&currPS=SA1">Withdraw</a>
+				</div>
+			</div>
+      </li>
+         <li class="MA2 curr-MA2 crypt all" id="balanceidMA2" data-id="balanceidMA2" title="">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">MANA</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--ma2">
+						<a href="#"  data-curr="MA2" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=MA2&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title=" - set as default currency"><i class="icon-ma2"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache curr-MA2">
+						<span class="curr fa fa-ma2"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="pjax balance__btn-deposit" href="/en/account/add/?_pjax=Y&curr=MA2" >Deposit</a>
+					<a class="pjax balance__btn-deposit" href="/en/account/send/?_pjax=Y&currPS=MA2">Withdraw</a>
+				</div>
+			</div>
+      </li>
+         <li class="AA1 curr-AA1 crypt all" id="balanceidAA1" data-id="balanceidAA1" title="">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">AAVE</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--aa1">
+						<a href="#"  data-curr="AA1" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=AA1&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title=" - set as default currency"><i class="icon-aa1"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache curr-AA1">
+						<span class="curr fa fa-aa1"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.000000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="pjax balance__btn-deposit" href="/en/account/add/?_pjax=Y&curr=AA1" >Deposit</a>
+					<a class="pjax balance__btn-deposit" href="/en/account/send/?_pjax=Y&currPS=AA1">Withdraw</a>
+				</div>
+			</div>
+      </li>
+         <li class="SU1 curr-SU1 crypt all" id="balanceidSU1" data-id="balanceidSU1" title="">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">SUSHI</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--su1">
+						<a href="#"  data-curr="SU1" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=SU1&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title=" - set as default currency"><i class="icon-su1"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache curr-SU1">
+						<span class="curr fa fa-su1"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="pjax balance__btn-deposit" href="/en/account/add/?_pjax=Y&curr=SU1" >Deposit</a>
+					<a class="pjax balance__btn-deposit" href="/en/account/send/?_pjax=Y&currPS=SU1">Withdraw</a>
+				</div>
+			</div>
+      </li>
+         <li class="CA1 curr-CA1 crypt all" id="balanceidCA1" data-id="balanceidCA1" title="">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">CAKE</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--ca1">
+						<a href="#"  data-curr="CA1" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=CA1&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title=" - set as default currency"><i class="icon-ca1"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache curr-CA1">
+						<span class="curr fa fa-ca1"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="pjax balance__btn-deposit" href="/en/account/add/?_pjax=Y&curr=CA1" >Deposit</a>
+					<a class="pjax balance__btn-deposit" href="/en/account/send/?_pjax=Y&currPS=CA1">Withdraw</a>
+				</div>
+			</div>
+      </li>
+         <li class="1I1 curr-1I1 crypt all" id="balanceid1I1" data-id="balanceid1I1" title="">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">1INCH</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--1i1">
+						<a href="#"  data-curr="1I1" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=1I1&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title=" - set as default currency"><i class="icon-1i1"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache curr-1I1">
+						<span class="curr fa fa-1i1"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="pjax balance__btn-deposit" href="/en/account/add/?_pjax=Y&curr=1I1" >Deposit</a>
+					<a class="pjax balance__btn-deposit" href="/en/account/send/?_pjax=Y&currPS=1I1">Withdraw</a>
+				</div>
+			</div>
+      </li>
+         <li class="GA1 curr-GA1 crypt all" id="balanceidGA1" data-id="balanceidGA1" title="">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">GALA</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--ga1">
+						<a href="#"  data-curr="GA1" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=GA1&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title=" - set as default currency"><i class="icon-ga1"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache curr-GA1">
+						<span class="curr fa fa-ga1"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.0000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="pjax balance__btn-deposit" href="/en/account/add/?_pjax=Y&curr=GA1" >Deposit</a>
+					<a class="pjax balance__btn-deposit" href="/en/account/send/?_pjax=Y&currPS=GA1">Withdraw</a>
+				</div>
+			</div>
+      </li>
+         <li class="LDO curr-LDO crypt all" id="balanceidLDO" data-id="balanceidLDO" title="">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">LDO</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--ldo">
+						<a href="#"  data-curr="LDO" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=LDO&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title=" - set as default currency"><i class="icon-ldo"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache curr-LDO">
+						<span class="curr fa fa-ldo"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="pjax balance__btn-deposit" href="/en/account/add/?_pjax=Y&curr=LDO" >Deposit</a>
+					<a class="pjax balance__btn-deposit" href="/en/account/send/?_pjax=Y&currPS=LDO">Withdraw</a>
+				</div>
+			</div>
+      </li>
+         <li class="GMT curr-GMT crypt all" id="balanceidGMT" data-id="balanceidGMT" title="">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">GMT</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--gmt">
+						<a href="#"  data-curr="GMT" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=GMT&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title=" - set as default currency"><i class="icon-gmt"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache curr-GMT">
+						<span class="curr fa fa-gmt"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="pjax balance__btn-deposit" href="/en/account/add/?_pjax=Y&curr=GMT" >Deposit</a>
+					<a class="pjax balance__btn-deposit" href="/en/account/send/?_pjax=Y&currPS=GMT">Withdraw</a>
+				</div>
+			</div>
+      </li>
+         <li class="UNI curr-UNI crypt all" id="balanceidUNI" data-id="balanceidUNI" title="">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">UNI</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--uni">
+						<a href="#"  data-curr="UNI" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=UNI&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title=" - set as default currency"><i class="icon-uni"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache curr-UNI">
+						<span class="curr fa fa-uni"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="pjax balance__btn-deposit" href="/en/account/add/?_pjax=Y&curr=UNI" >Deposit</a>
+					<a class="pjax balance__btn-deposit" href="/en/account/send/?_pjax=Y&currPS=UNI">Withdraw</a>
+				</div>
+			</div>
+      </li>
+         <li class="CRV curr-CRV crypt all" id="balanceidCRV" data-id="balanceidCRV" title="">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">CRV</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--crv">
+						<a href="#"  data-curr="CRV" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=CRV&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title=" - set as default currency"><i class="icon-crv"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache curr-CRV">
+						<span class="curr fa fa-crv"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="pjax balance__btn-deposit" href="/en/account/add/?_pjax=Y&curr=CRV" >Deposit</a>
+					<a class="pjax balance__btn-deposit" href="/en/account/send/?_pjax=Y&currPS=CRV">Withdraw</a>
+				</div>
+			</div>
+      </li>
+         <li class="BAL curr-BAL crypt all" id="balanceidBAL" data-id="balanceidBAL" title="">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">BAL</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--bal">
+						<a href="#"  data-curr="BAL" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=BAL&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title=" - set as default currency"><i class="icon-bal"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache curr-BAL">
+						<span class="curr fa fa-bal"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="pjax balance__btn-deposit" href="/en/account/add/?_pjax=Y&curr=BAL" >Deposit</a>
+					<a class="pjax balance__btn-deposit" href="/en/account/send/?_pjax=Y&currPS=BAL">Withdraw</a>
+				</div>
+			</div>
+      </li>
+         <li class="GRT curr-GRT crypt all" id="balanceidGRT" data-id="balanceidGRT" title="">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">GRT</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--grt">
+						<a href="#"  data-curr="GRT" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=GRT&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title=" - set as default currency"><i class="icon-grt"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache curr-GRT">
+						<span class="curr fa fa-grt"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="pjax balance__btn-deposit" href="/en/account/add/?_pjax=Y&curr=GRT" >Deposit</a>
+					<a class="pjax balance__btn-deposit" href="/en/account/send/?_pjax=Y&currPS=GRT">Withdraw</a>
+				</div>
+			</div>
+      </li>
+         <li class="APE curr-APE crypt all" id="balanceidAPE" data-id="balanceidAPE" title="">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">APE</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--ape">
+						<a href="#"  data-curr="APE" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=APE&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title=" - set as default currency"><i class="icon-ape"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache curr-APE">
+						<span class="curr fa fa-ape"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="pjax balance__btn-deposit" href="/en/account/add/?_pjax=Y&curr=APE" >Deposit</a>
+					<a class="pjax balance__btn-deposit" href="/en/account/send/?_pjax=Y&currPS=APE">Withdraw</a>
+				</div>
+			</div>
+      </li>
+   
+			<li class="active-orders USD trade-curr-USD balance-0 " id="balancetradeidUSD" data-id="balancetradeidUSD" style="display: none;">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">USD</div>
+					<div class="balance__extra-currency">
+											</div>
+					<div class="balance__icon-currency balance-item--usd">
+						<a href="#"  data-curr="USD" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=USD&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="#NAME# - set as default currency"><i class="icon-usd"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache ">
+						<span class="curr fa fa-usd"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="balance__btn-deposit" href="#" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=USD'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;" >Cancel</a>
+				</div>
+			</div>
+		</li>
+				<li class="active-orders RUB trade-curr-RUB balance-0 " id="balancetradeidRUB" data-id="balancetradeidRUB" style="display: none;">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">RUB</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--rub">
+						<a href="#"  data-curr="RUB" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=RUB&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="#NAME# - set as default currency"><i class="icon-rub"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache ">
+						<span class="curr fa fa-rub"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="balance__btn-deposit" href="#" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=RUB'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;" >Cancel</a>
+				</div>
+			</div>
+		</li>
+				<li class="active-orders EUR trade-curr-EUR balance-0 " id="balancetradeidEUR" data-id="balancetradeidEUR" style="display: none;">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">EUR</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--eur">
+						<a href="#"  data-curr="EUR" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=EUR&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="#NAME# - set as default currency"><i class="icon-eur"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache ">
+						<span class="curr fa fa-eur"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="balance__btn-deposit" href="#" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=EUR'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;" >Cancel</a>
+				</div>
+			</div>
+		</li>
+				<li class="active-orders BTC trade-curr-BTC balance-0 " id="balancetradeidBTC" data-id="balancetradeidBTC" style="display: none;">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">BTC</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--btc">
+						<a href="#"  data-curr="BTC" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=BTC&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="#NAME# - set as default currency"><i class="icon-btc"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache ">
+						<span class="curr fa fa-btc"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00000000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="balance__btn-deposit" href="#" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=BTC'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;" >Cancel</a>
+				</div>
+			</div>
+		</li>
+				<li class="active-orders ETH trade-curr-ETH balance-0 " id="balancetradeidETH" data-id="balancetradeidETH" style="display: none;">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">ETH</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--eth">
+						<a href="#"  data-curr="ETH" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=ETH&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="#NAME# - set as default currency"><i class="icon-eth"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache ">
+						<span class="curr fa fa-eth"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00000000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="balance__btn-deposit" href="#" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=ETH'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;" >Cancel</a>
+				</div>
+			</div>
+		</li>
+				<li class="active-orders BCH trade-curr-BCH balance-0 " id="balancetradeidBCH" data-id="balancetradeidBCH" style="display: none;">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">BCH</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--bch">
+						<a href="#"  data-curr="BCH" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=BCH&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="#NAME# - set as default currency"><i class="icon-bch"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache ">
+						<span class="curr fa fa-bch"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00000000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="balance__btn-deposit" href="#" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=BCH'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;" >Cancel</a>
+				</div>
+			</div>
+		</li>
+				<li class="active-orders LTC trade-curr-LTC balance-0 " id="balancetradeidLTC" data-id="balancetradeidLTC" style="display: none;">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">LTC</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--ltc">
+						<a href="#"  data-curr="LTC" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=LTC&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="#NAME# - set as default currency"><i class="icon-ltc"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache ">
+						<span class="curr fa fa-ltc"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00000000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="balance__btn-deposit" href="#" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=LTC'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;" >Cancel</a>
+				</div>
+			</div>
+		</li>
+				<li class="active-orders DAA trade-curr-DAA balance-0 " id="balancetradeidDAA" data-id="balancetradeidDAA" style="display: none;">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">DASH</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--daa">
+						<a href="#"  data-curr="DAA" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=DAA&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="#NAME# - set as default currency"><i class="icon-daa"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache ">
+						<span class="curr fa fa-daa"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00000000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="balance__btn-deposit" href="#" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=DAA'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;" >Cancel</a>
+				</div>
+			</div>
+		</li>
+				<li class="active-orders UST trade-curr-UST balance-0 " id="balancetradeidUST" data-id="balancetradeidUST" style="display: none;">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">USDT</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--ust">
+						<a href="#"  data-curr="UST" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=UST&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="#NAME# - set as default currency"><i class="icon-ust"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache ">
+						<span class="curr fa fa-ust"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="balance__btn-deposit" href="#" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=UST'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;" >Cancel</a>
+				</div>
+			</div>
+		</li>
+				<li class="active-orders XRP trade-curr-XRP balance-0 " id="balancetradeidXRP" data-id="balancetradeidXRP" style="display: none;">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">XRP</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--xrp">
+						<a href="#"  data-curr="XRP" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=XRP&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="#NAME# - set as default currency"><i class="icon-xrp"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache ">
+						<span class="curr fa fa-xrp"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.000000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="balance__btn-deposit" href="#" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=XRP'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;" >Cancel</a>
+				</div>
+			</div>
+		</li>
+				<li class="active-orders DOG trade-curr-DOG balance-0 " id="balancetradeidDOG" data-id="balancetradeidDOG" style="display: none;">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">DOGE</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--dog">
+						<a href="#"  data-curr="DOG" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=DOG&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="#NAME# - set as default currency"><i class="icon-dog"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache ">
+						<span class="curr fa fa-dog"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00000000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="balance__btn-deposit" href="#" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=DOG'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;" >Cancel</a>
+				</div>
+			</div>
+		</li>
+				<li class="active-orders TRX trade-curr-TRX balance-0 " id="balancetradeidTRX" data-id="balancetradeidTRX" style="display: none;">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">TRX</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--trx">
+						<a href="#"  data-curr="TRX" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=TRX&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="#NAME# - set as default currency"><i class="icon-trx"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache ">
+						<span class="curr fa fa-trx"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.000000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="balance__btn-deposit" href="#" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=TRX'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;" >Cancel</a>
+				</div>
+			</div>
+		</li>
+				<li class="active-orders BNB trade-curr-BNB balance-0 " id="balancetradeidBNB" data-id="balancetradeidBNB" style="display: none;">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">BNB</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--bnb">
+						<a href="#"  data-curr="BNB" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=BNB&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="#NAME# - set as default currency"><i class="icon-bnb"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache ">
+						<span class="curr fa fa-bnb"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00000000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="balance__btn-deposit" href="#" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=BNB'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;" >Cancel</a>
+				</div>
+			</div>
+		</li>
+				<li class="active-orders MA1 trade-curr-MA1 balance-0 " id="balancetradeidMA1" data-id="balancetradeidMA1" style="display: none;">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">MATIC</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--ma1">
+						<a href="#"  data-curr="MA1" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=MA1&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="#NAME# - set as default currency"><i class="icon-ma1"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache ">
+						<span class="curr fa fa-ma1"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.0000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="balance__btn-deposit" href="#" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=MA1'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;" >Cancel</a>
+				</div>
+			</div>
+		</li>
+				<li class="active-orders DAI trade-curr-DAI balance-0 " id="balancetradeidDAI" data-id="balancetradeidDAI" style="display: none;">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">DAI</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--dai">
+						<a href="#"  data-curr="DAI" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=DAI&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="#NAME# - set as default currency"><i class="icon-dai"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache ">
+						<span class="curr fa fa-dai"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="balance__btn-deposit" href="#" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=DAI'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;" >Cancel</a>
+				</div>
+			</div>
+		</li>
+				<li class="active-orders DOT trade-curr-DOT balance-0 " id="balancetradeidDOT" data-id="balancetradeidDOT" style="display: none;">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">DOT</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--dot">
+						<a href="#"  data-curr="DOT" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=DOT&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="#NAME# - set as default currency"><i class="icon-dot"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache ">
+						<span class="curr fa fa-dot"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.000000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="balance__btn-deposit" href="#" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=DOT'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;" >Cancel</a>
+				</div>
+			</div>
+		</li>
+				<li class="active-orders US1 trade-curr-US1 balance-0 " id="balancetradeidUS1" data-id="balancetradeidUS1" style="display: none;">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">USDC</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--us1">
+						<a href="#"  data-curr="US1" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=US1&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="#NAME# - set as default currency"><i class="icon-us1"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache ">
+						<span class="curr fa fa-us1"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="balance__btn-deposit" href="#" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=US1'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;" >Cancel</a>
+				</div>
+			</div>
+		</li>
+				<li class="active-orders LI1 trade-curr-LI1 balance-0 " id="balancetradeidLI1" data-id="balancetradeidLI1" style="display: none;">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">LINK</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--li1">
+						<a href="#"  data-curr="LI1" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=LI1&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="#NAME# - set as default currency"><i class="icon-li1"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache ">
+						<span class="curr fa fa-li1"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.000000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="balance__btn-deposit" href="#" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=LI1'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;" >Cancel</a>
+				</div>
+			</div>
+		</li>
+				<li class="active-orders SA1 trade-curr-SA1 balance-0 " id="balancetradeidSA1" data-id="balancetradeidSA1" style="display: none;">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">SAND</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--sa1">
+						<a href="#"  data-curr="SA1" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=SA1&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="#NAME# - set as default currency"><i class="icon-sa1"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache ">
+						<span class="curr fa fa-sa1"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="balance__btn-deposit" href="#" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=SA1'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;" >Cancel</a>
+				</div>
+			</div>
+		</li>
+				<li class="active-orders MA2 trade-curr-MA2 balance-0 " id="balancetradeidMA2" data-id="balancetradeidMA2" style="display: none;">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">MANA</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--ma2">
+						<a href="#"  data-curr="MA2" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=MA2&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="#NAME# - set as default currency"><i class="icon-ma2"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache ">
+						<span class="curr fa fa-ma2"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="balance__btn-deposit" href="#" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=MA2'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;" >Cancel</a>
+				</div>
+			</div>
+		</li>
+				<li class="active-orders AA1 trade-curr-AA1 balance-0 " id="balancetradeidAA1" data-id="balancetradeidAA1" style="display: none;">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">AAVE</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--aa1">
+						<a href="#"  data-curr="AA1" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=AA1&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="#NAME# - set as default currency"><i class="icon-aa1"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache ">
+						<span class="curr fa fa-aa1"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.000000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="balance__btn-deposit" href="#" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=AA1'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;" >Cancel</a>
+				</div>
+			</div>
+		</li>
+				<li class="active-orders SU1 trade-curr-SU1 balance-0 " id="balancetradeidSU1" data-id="balancetradeidSU1" style="display: none;">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">SUSHI</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--su1">
+						<a href="#"  data-curr="SU1" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=SU1&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="#NAME# - set as default currency"><i class="icon-su1"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache ">
+						<span class="curr fa fa-su1"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="balance__btn-deposit" href="#" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=SU1'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;" >Cancel</a>
+				</div>
+			</div>
+		</li>
+				<li class="active-orders CA1 trade-curr-CA1 balance-0 " id="balancetradeidCA1" data-id="balancetradeidCA1" style="display: none;">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">CAKE</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--ca1">
+						<a href="#"  data-curr="CA1" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=CA1&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="#NAME# - set as default currency"><i class="icon-ca1"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache ">
+						<span class="curr fa fa-ca1"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="balance__btn-deposit" href="#" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=CA1'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;" >Cancel</a>
+				</div>
+			</div>
+		</li>
+				<li class="active-orders 1I1 trade-curr-1I1 balance-0 " id="balancetradeid1I1" data-id="balancetradeid1I1" style="display: none;">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">1INCH</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--1i1">
+						<a href="#"  data-curr="1I1" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=1I1&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="#NAME# - set as default currency"><i class="icon-1i1"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache ">
+						<span class="curr fa fa-1i1"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="balance__btn-deposit" href="#" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=1I1'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;" >Cancel</a>
+				</div>
+			</div>
+		</li>
+				<li class="active-orders GA1 trade-curr-GA1 balance-0 " id="balancetradeidGA1" data-id="balancetradeidGA1" style="display: none;">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">GALA</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--ga1">
+						<a href="#"  data-curr="GA1" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=GA1&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="#NAME# - set as default currency"><i class="icon-ga1"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache ">
+						<span class="curr fa fa-ga1"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.0000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="balance__btn-deposit" href="#" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=GA1'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;" >Cancel</a>
+				</div>
+			</div>
+		</li>
+				<li class="active-orders LDO trade-curr-LDO balance-0 " id="balancetradeidLDO" data-id="balancetradeidLDO" style="display: none;">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">LDO</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--ldo">
+						<a href="#"  data-curr="LDO" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=LDO&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="#NAME# - set as default currency"><i class="icon-ldo"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache ">
+						<span class="curr fa fa-ldo"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="balance__btn-deposit" href="#" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=LDO'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;" >Cancel</a>
+				</div>
+			</div>
+		</li>
+				<li class="active-orders GMT trade-curr-GMT balance-0 " id="balancetradeidGMT" data-id="balancetradeidGMT" style="display: none;">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">GMT</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--gmt">
+						<a href="#"  data-curr="GMT" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=GMT&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="#NAME# - set as default currency"><i class="icon-gmt"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache ">
+						<span class="curr fa fa-gmt"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="balance__btn-deposit" href="#" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=GMT'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;" >Cancel</a>
+				</div>
+			</div>
+		</li>
+				<li class="active-orders UNI trade-curr-UNI balance-0 " id="balancetradeidUNI" data-id="balancetradeidUNI" style="display: none;">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">UNI</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--uni">
+						<a href="#"  data-curr="UNI" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=UNI&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="#NAME# - set as default currency"><i class="icon-uni"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache ">
+						<span class="curr fa fa-uni"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="balance__btn-deposit" href="#" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=UNI'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;" >Cancel</a>
+				</div>
+			</div>
+		</li>
+				<li class="active-orders CRV trade-curr-CRV balance-0 " id="balancetradeidCRV" data-id="balancetradeidCRV" style="display: none;">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">CRV</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--crv">
+						<a href="#"  data-curr="CRV" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=CRV&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="#NAME# - set as default currency"><i class="icon-crv"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache ">
+						<span class="curr fa fa-crv"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="balance__btn-deposit" href="#" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=CRV'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;" >Cancel</a>
+				</div>
+			</div>
+		</li>
+				<li class="active-orders BAL trade-curr-BAL balance-0 " id="balancetradeidBAL" data-id="balancetradeidBAL" style="display: none;">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">BAL</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--bal">
+						<a href="#"  data-curr="BAL" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=BAL&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="#NAME# - set as default currency"><i class="icon-bal"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache ">
+						<span class="curr fa fa-bal"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="balance__btn-deposit" href="#" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=BAL'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;" >Cancel</a>
+				</div>
+			</div>
+		</li>
+				<li class="active-orders GRT trade-curr-GRT balance-0 " id="balancetradeidGRT" data-id="balancetradeidGRT" style="display: none;">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">GRT</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--grt">
+						<a href="#"  data-curr="GRT" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=GRT&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="#NAME# - set as default currency"><i class="icon-grt"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache ">
+						<span class="curr fa fa-grt"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="balance__btn-deposit" href="#" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=GRT'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;" >Cancel</a>
+				</div>
+			</div>
+		</li>
+				<li class="active-orders APE trade-curr-APE balance-0 " id="balancetradeidAPE" data-id="balancetradeidAPE" style="display: none;">
+			<div class="balance__body">
+				<div class="balance__top">
+					<div class="balance__name-currency">APE</div>
+					<div class="balance__extra-currency">
+													<span class="info-balance-cur ibc-small">
+								<span class="curr fa fa-usd"></span>
+								<span class="curr ibc-curr">0.00</span>							</span>
+											</div>
+					<div class="balance__icon-currency balance-item--ape">
+						<a href="#"  data-curr="APE" onClick="ajaxLoad({id: '#', url: '/bitrix/components/payeer/account.info/templates/balance2/ajax.php?action=param&param=itog_defcurr&val=APE&sessid=f4b3af2df9e4e7e7cb30490755c7a644'}, {nprogress: 'N', type: 'null'}); return false;" title="#NAME# - set as default currency"><i class="icon-ape"></i></a>
+					</div>
+				</div>
+				<div class="balance__middle">
+					<div class="balance__cache ">
+						<span class="curr fa fa-ape"></span>
+												<span class="int">0</span>
+						<small><span class="pr">.00000</span></small>
+					</div>
+				</div>
+				<div class="balance__bottom">
+					<a class="balance__btn-deposit" href="#" onclick="ajaxLoad({url: '/bitrix/components/trade/my.active.orders/templates/2020/ajax.php?action=refund_by_currency&curr=APE'}, {type: 'dialog', modal: true, dialogClass: 'dialog-trade-request-detail'}); return false;" >Cancel</a>
+				</div>
+			</div>
+		</li>
+		</ul>
+<div class="clear"></div>
+
+<script type="text/javascript">
+var defItogCurr = 'USD';
+
+$(document).ready(function()
+{
+	balanceUpdate();
+
+	$('.abn-h2 span').click(function()
+	{
+				let type = $(this).data('type');
+
+		
+		$('.account_balance_new > li').hide();
+		$('.account_balance_new > li.'+type).not('.balance-0').show();
+
+		$('.abn-h2 span.active').removeClass('active');
+		$(this).addClass('active');
+	});
+
+	$(document).keyup(function(e)
+	{
+		//alt + r
+		if (e.altKey && e.keyCode === 82) {
+			localStorage.removeItem("sortBalance");
+			location.reload();
+		}
+	});
+
+	if(!isMobile(navigator.userAgent)) {
+		new Sortable(main_list_balance_block, {
+			swap: true,
+			swapClass: 'highlight',
+			animation: 1000,
+			store: {
+				get: function (sortable) {
+					var order = localStorage.getItem("sortBalance");
+					$( "#main_list_balance_block" ).removeClass('hide');
+					return order ? order.split(',') : [];
+				},
+				set: function (evt) {
+					localStorage.setItem("sortBalance", evt.toArray());
+				}
+			}
+		});
+		$( "#main_list_balance_block" ).disableSelection();
+	} else {
+		$( "#main_list_balance_block" ).removeClass('hide');
+	}
+});
+
+
+function afterHideWallet(e, response)
+{
+	$('.wtop .balance li.' + e.curr).hide();
+}
+
+
+function afterShowHiddenWallets(e, response)
+{
+	$('.wtop .balance li').show();
+}
+</script>
+</div>
+			</div>
+		</div>
+	</main>
+</div>
+<div class="clear"></div>
+</body>
+</html>
