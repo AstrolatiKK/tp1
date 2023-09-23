@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Degree Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 300px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .converter {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            margin-top: 10px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        #result {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Degree Converter (Fahrenheit to Celsius)</h1>
+        <div class="converter">
+            <label for="fahrenheit">Enter temperature in Fahrenheit:</label>
+            <input type="text" id="fahrenheit" placeholder="Enter temperature" oninput="convertToFahrenheit(this.value)" />
+
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script>
+        function convertToFahrenheit(fahrenheit) {
+            var resultElement = document.getElementById("result");
+
+            if (fahrenheit === "") {
+                resultElement.textContent = "";
+                return;
+            }
+
+            // Get the input value and convert it to a number
+            fahrenheit = parseFloat(fahrenheit);
+
+            // Check if the input is a valid number
+            if (!isNaN(fahrenheit)) {
+                var celsius = (fahrenheit - 32) * 5/9;
+                resultElement.textContent = `${fahrenheit.toFixed(2)}°F is ${celsius.toFixed(2)}°C`;
+            } else {
+                resultElement.textContent = "Please enter a valid temperature in Fahrenheit.";
+            }
+        }
+    </script>
+</body>
+</html>
