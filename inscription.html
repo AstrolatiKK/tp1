@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulaire d'inscription au match</title>
+</head>
+<body>
+    <h1>Formulaire d'inscription au match</h1>
+    <form id="inscriptionForm">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required><br>
+
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required><br>
+
+        <label for="telephone">Numéro de téléphone :</label>
+        <input type="text" id="telephone" name="telephone" required><br>
+
+        <label for="dateMatch">Date du match (YYYY-MM-DD) :</label>
+        <input type="text" id="dateMatch" name="dateMatch" required><br>
+
+        <input type="submit" value="Inscrire">
+    </form>
+
+    <script>
+        document.getElementById("inscriptionForm").addEventListener("submit", function(event) {
+            // Récupérer les valeurs des champs
+            var nom = document.getElementById("nom").value;
+            var prenom = document.getElementById("prenom").value;
+            var telephone = document.getElementById("telephone").value;
+            var dateMatch = document.getElementById("dateMatch").value;
+
+            // Contrôle de saisie pour le nom
+            var regexNom = /^[a-zA-Z]+$/;
+            if (!regexNom.test(nom) || nom.length < 1) {
+                alert("Le nom doit contenir uniquement des lettres et avoir au moins 1 caractère.");
+                event.preventDefault(); // Empêcher la soumission du formulaire
+                return;
+            }
+
+            // Contrôle de saisie pour le prénom
+            if (prenom.length < 1) {
+                alert("Le prénom doit avoir au moins 1 caractère.");
+                event.preventDefault();
+                return;
+            }
+
+            // Contrôle de saisie pour le numéro de téléphone
+            var regexTelephone = /^\d{8}$/;
+            if (!regexTelephone.test(telephone)) {
+                alert("Le numéro de téléphone doit contenir exactement 8 chiffres.");
+                event.preventDefault();
+                return;
+            }
+
+            // Contrôle de saisie pour la date du match
+            var dateMatchObj = new Date(dateMatch);
+            var dateDebut = new Date("2023-09-01");
+            var dateFin = new Date("2023-12-30");
+
+            if (isNaN(dateMatchObj) || dateMatchObj < dateDebut || dateMatchObj > dateFin) {
+                alert("La date du match doit être comprise entre le 1er septembre 2023 et le 30 décembre 2023.");
+                event.preventDefault();
+                return;
+            }
+        });
+    </script>
+    <style>
+        input[type=text], select {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #91be14;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        
+        input[type=submit] {
+          width: 100%;
+          background-color: #4CAF50;
+          color: rgb(255, 255, 255);
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+        
+        div {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 20px;
+        }
+        </style>
+        <body>
+</body>
+</html>
